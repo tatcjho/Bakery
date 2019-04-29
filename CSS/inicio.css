@@ -219,3 +219,25 @@ p{
   font-family: sans-serif;
 }
 
+
+
+div#foot{
+  background-color:#F53D3D;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+}
+
+#foot p {
+  padding-top: 20px;
+  color: white;
+}
+
+div#amarillo{
+ 
+  margin-top: 25px;
+  background-color: #FFB947;
+  text-align: center;
+  height: 25px;
+  width: 100%;
+}

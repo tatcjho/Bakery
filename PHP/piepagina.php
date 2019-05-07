@@ -14,7 +14,7 @@
         <div class="piePagina">
             <div class="container-footer">
                 <div class="copi">
-                    <label>&copy; 2019 Todos los Derechos Reservados | <a href="index.html">Sweet Fest</a> </label>
+                    <label>&copy; 2019 Todos los Derechos Reservados | <a href="index.php">Sweet Fest</a> </label>
                 </div>
                 <div class="diseno">
                     <label> Diseño y programación realizado por: </label>

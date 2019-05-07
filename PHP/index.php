@@ -30,7 +30,7 @@
                 <p>EL PLACER DE COMER AHORA MÁS CERCA DE TI, VISITA NUESTRAS SUCURSALES</p>
                 <br>
                 <div class="click">
-                    <a href="#sucursales">click AQUÍ</a>
+                    <a href="sucuCuenca.php">click AQUÍ</a>
                 </div>
             </div>
         </div>

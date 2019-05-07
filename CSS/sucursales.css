@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: rale;
+    letter-spacing: 2px;
+}
+.contenido{
+    width: 100%;
+    padding-top: 91px;
+}
+.imagen{
+    width: 100%;
+    padding: 20px 20px; 
+}
+.imagen img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.imagen p{
+    text-align: justify;
+}
+.sub {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tit {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub .tit h4{
+    font-size: 50px;
+    text-align: center;
+}
+
+.sub .hiper {
+    width: 60%;
+    /* height: 70px; */
+    margin: auto;
+    text-align: center;
+
+}
+
+.sub .hiper a {
+    color: grey;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-right: solid gray;
+    font-family: akro;
+}
+
+.sub .hiper a:hover {
+    color: darkmagenta;
+}
+
+.map{
+    width: 100%;
+}
+@media screen and (max-width: 420px){
+    .sub{
+        display: flex;
+        align-items: flex-start;
+    }
+    .sub .tit h4{
+        font-size: 35px;
+    }
+    .sub .hiper a {
+        font-size: 30px;
+        border-right:none;
+
+    
+    }
+
+}
+@font-face{
+    font-family: rale;
+    src: url(../fuentes/Raleway-Regular.ttf);
+}

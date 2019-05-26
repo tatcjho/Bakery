@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/sucursales.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="../js/sucursales.js"></script>
 </head>
 
 <body>
@@ -21,12 +24,9 @@
             <div class="tit">
                 <h4>Cuenca</h4>
             </div>
-            <div class="hiper">
-                <a href="sucuCuenca.php">Cuenca</a>
-                <a href="sucuQuito.php">Quito</a>
-                <a href="sucuGuayaquil.php">Guayaquil</a>
-
-            </div>
+            <?php
+            include("../archivosSecu/subcabecera.php");
+            ?>
 
         </div>
 
@@ -44,19 +44,74 @@
 
         </section>
 
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.1567008253714!2d-79.0664620707918!3d-2.9231783605070754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd2300736ff9fb%3A0x9a095d93e3366648!2zQmHDsW9z!5e0!3m2!1ses-419!2sec!4v1557204722135!5m2!1ses-419!2sec" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <div class="conte">
+            <h1>Acerca de nostros</h1>
+
+
+            <div class="contenedor">
+
+
+                <div class="acercaTienda">
+
+                    <div class="horario">
+                        <h2>Horario de Antencion</h2>
+                        <br>
+                        <p> Lunes a Viernes de 7:00 am a 6:00 pm </p>
+                        <p> Sabado y Domingo de 9:00 am a 5:00 pm</p>
+                    </div>
+
+                    <div class="datos">
+                        <h2>Contactos</h2>
+                        <br>
+                        <p><i class="fas fa-phone"></i> <a href="tel:0969415550">0969415550</a></p>
+                        <p><i class="fas fa-phone-volume"></i> <a href="tel:+074092675">(07)+4092675</a></p>
+                        <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@outlok.com">cocolate@outlok.com</a></p>
+                        <p><i class="fas fa-map-marked-alt"></i> Av.Turuhuayco y Del Obrero</p>
+                    </div>
+
+                </div>
+
+
+                <div id="map" class="map"> </div>
+                <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+                <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+                <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+                <script>
+                    var divMapa = document.getElementById('map');
+
+                    navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+
+                    function fn_mal() {}
+
+                    function fn_ok(rta) {
+                        var lat = rta.coords.latitude;
+                        var lon = rta.coords.longitude;
+                        var tienlat = '-2.884650'
+                        var tienlon = '-78.989460'
+                        console.log(lat, lon);
+                        sucursales(lat, lon, tienlat, tienlon);
+                    }
+                </script>
+
+
+            </div>
+            <br>
+
+
+
+            <?php
+            include("piepagina.php");
+            ?>
+
+
         </div>
 
-
-        <?php
-        include("piepagina.php");
-        ?>
-
-
     </div>
-
-
 
 </body>
 

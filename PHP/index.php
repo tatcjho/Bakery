@@ -42,7 +42,7 @@
             <div class="imagenbienv">
                 <img src="../images/69.jpg" alt="" id="img">
             </div>
-
+        <!-- hoal -->
 
             <div id="int">
                 <h4>Acerca de Nosotros</h4>

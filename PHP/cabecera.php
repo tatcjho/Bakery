@@ -47,13 +47,7 @@
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li class="submenu">
-                    <a href="#">Login<span class="fa fa-caret-down"></span></a>
-                    <ul class="children">
-                        <li><a href="Usuario/index.php">Usuarios</a></li>
-                        <li><a href="Empresa/index.php">Empresas</a></li>
-                    </ul>
-                </li>
+                <li><a href="sesiones.html">Iniciar Sesion</a></li>
             </ul>
         </nav>
 

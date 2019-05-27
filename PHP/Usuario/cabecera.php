@@ -9,7 +9,6 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../../CSS/index.css">
-
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js"></script>
 
@@ -35,9 +34,9 @@
 
         <nav>
             <ul>
-                <li><a href="index.php">Inicio</a></li>
+                <li><a href="../index.php">Inicio</a></li>
                 <li class="submenu">
-                    <a href="#">Productoss<span class="fa fa-caret-down"></span></a>
+                    <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
                         <li><a href="../../pan.php">Panes</a></li>
                         <li><a href="../../cookies.php">Galletas</a></li>
@@ -47,7 +46,7 @@
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="loginUsu.php">Login</a></li>
+                <li><a href="../sesiones.html">Iniciar Sesion</a></li>
             </ul>
         </nav>
 

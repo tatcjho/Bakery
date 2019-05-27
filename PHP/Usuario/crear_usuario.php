@@ -1,38 +1,42 @@
-<!DOCTYPE html> <html> <head> 
-    <meta charset="UTF-8">     
-    <title>Crear Nuevo Usuario</title>     
-    <style type="text/css" rel="stylesheet">         
-    .error{             
-        color: red;         
-        }     </style> </head> <body> 
- 
-    <?php                
-     //incluir conexión a la base de datos         
-     include 'conexionBD.php';                 
- 
-        $cedula = isset($_POST["cedula"]) ? trim($_POST["cedula"]) : null;         
-        $nombreApellido = isset($_POST["nombreApellido"]) ? mb_strtoupper(trim($_POST["nombreApellido"]), 'UTF-8') : null;         
-        $direccion = isset($_POST["direccion"]) ? mb_strtoupper(trim($_POST["direccion"]), 'UTF-8') : null;         
-        $telefono = isset($_POST["telefono"]) ? trim($_POST["telefono"]): null;                 
-        $correo = isset($_POST["correo"]) ? trim($_POST["correo"]): null;         
-        $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null;                 
-        $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;     
-        $fecha_Creacion = date('Y/m/d h:i:s', time());                                             
-        $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento', 'N', 'N', '$fecha_Creacion', null)";         
- 
-        if ($conn->query($sql) === TRUE) {             
-            echo "<p>Se ha creado los datos personales correctamemte!!!</p>";              
-        } else {             
-            if($conn->errno == 1062){                 
-                echo "<p class='error'>La persona con la cedula $cedula ya esta registrada en el sistema </p>";                  
-            }else{                 echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";             
-            }                     
-        }                  
-        //cerrar la base de datos         
-        $conn->close();         
-        echo "<a href='crear_usuario.html'>Regresar</a>";                   
-    ?> 
- 
+<!DOCTYPE html> 
+<html> 
+    <head>     
+        
+        <meta charset="UTF-8"> 
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="../CSS/crear_usuario.css">
+    </head> 
+    <body>
+        <div class="cabecera">
+        <?php
+        include("cabecera.php");
+        ?>
+    </div>
+    <div class="contenedor">
+        <div class="ancholetras">
+            <div class="texto">
+               <form id="formulario01" method="POST" action="../Usuario/Controladores/crear_usuario2.php">    
+                    <h2>Registrarse</h2>
+                    <input type="text" id="cedula" name="cedula" value="" placeholder="Cedula" required/>         
+                    <br>                
+                    <input type="text" id="nombreApellido" name="nombreApellido" value="" placeholder="Nombres y Apellidos" required/>         
+                    <br> 
+                    <input type="text" id="direccion" name="direccion" value="" placeholder="Direccion" required/>         
+                    <br> 
+                    <input type="text" id="telefono" name="telefono" value="" placeholder="Telefono" required/>         
+                    <br>                        
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Fecha Nacimiento" required/>         
+                    <br>                   
+                    <input type="email" id="correo" name="correo" value="" placeholder="Correo Electronico" required/>         
+                    <br>
+                    <input type="password" id="contrasena" name="contrasena" value="" placeholder="Contraseña" required/>         
+                    <br>      
+                    <input type="submit" id="crear" name="crear" value="Registrarse" />         
+                    <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />     
+                </form> 
+            </div>
+        </div>
+        <div id="fondo1"></div>
+    </div>
 </body> 
 </html> 
- 

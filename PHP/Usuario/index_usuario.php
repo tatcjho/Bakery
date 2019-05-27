@@ -70,18 +70,18 @@
 
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
-                        <a href="pan.php">COMPRAR PANES</a>
+                        <a href="../pan.php">COMPRAR PANES</a>
                     </div>
 
 
                     <div class="columnasx3">
                         <img src="../images/tortas/rainbow-cake2.jpg" alt="">
-                        <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
+                        <a href="../cake.php">COMPRAR TORTAS & CUPCAKES </a>
 
                     </div>
                     <div class="columnasx3">
                         <img src="../images/galletas/chocolate-chip-cookies.jpg" alt="">
-                        <a href="cookies.php">COMPRAR GALLETAS</a>
+                        <a href="../cookies.php">COMPRAR GALLETAS</a>
                     </div>
 
                 </section>

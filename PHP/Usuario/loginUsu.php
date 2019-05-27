@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="../../CSS/login.css">
+    <link href="cabecera.php">
 </head>
 
 <body>

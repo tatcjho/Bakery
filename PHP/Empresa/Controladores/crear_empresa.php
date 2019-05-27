@@ -8,7 +8,7 @@
  
     <?php                
      //incluir conexión a la base de datos         
-     include 'conexionBD.php';                 
+     include '../../Conexion/conexionBD.php';                 
  
         $ruc = isset($_POST["ruc"]) ? trim($_POST["ruc"]) : null;         
         $nombre = isset($_POST["nombre"]) ? mb_strtoupper(trim($_POST["nombre"]), 'UTF-8') : null;         

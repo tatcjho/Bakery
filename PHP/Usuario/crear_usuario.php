@@ -4,7 +4,7 @@
         
         <meta charset="UTF-8"> 
         <title>Registrarse</title>
-        <link rel="stylesheet" href="../CSS/crear_usuario.css">
+        <link rel="stylesheet" href="../../CSS/crear_usuario.css">
     </head> 
     <body>
         <div class="cabecera">
@@ -18,7 +18,11 @@
                <form id="formulario01" method="POST" action="../Usuario/Controladores/crear_usuario2.php">    
                     <h2>Registrarse</h2>
                     <input type="text" id="cedula" name="cedula" value="" placeholder="Cedula" required/>         
-                    <br>                
+                    <br>
+
+                    <input type="text" id="rol" name="rol" value="" placeholder="Rol" required/>         
+                    <br>
+
                     <input type="text" id="nombreApellido" name="nombreApellido" value="" placeholder="Nombres y Apellidos" required/>         
                     <br> 
                     <input type="text" id="direccion" name="direccion" value="" placeholder="Direccion" required/>         

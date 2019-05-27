@@ -36,12 +36,16 @@ input {
     color: white;
 }
 #crear{
+    width: 50%;
+    float: left;
     background-color: #E04A4A;
+    border-right: 1px solid black;
 }
 #crear:hover{
     background-color: #52B6C6;
 }
 #cancelar{
+    width: 50%;
     background-color: #E04A4A;
 }
 #cancelar:hover{

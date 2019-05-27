@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
-
 </head>
 
 <body>
@@ -15,22 +14,20 @@
         <?php
         include("cabecera.php");
         ?>
-
     </div>
-
-
     <div class="contenedor">
-        <form action="loginUsu2.php" method="POST">
-            <h2>Login</h2>
-            <input id="correo" type="email" name="correo" placeholder="correo"  required>
-            <input id="contrasena" type="password" name="contrasena" placeholder="contrasena"  required>
-
-            <input type="submit" id="login" name="login" value="Iniciar Sesión" required />
-        </form>
-
+        <div class="ancholetras">
+            <div class="texto">
+                <form action="loginUsu2.php" method="POST">
+                    <h2>Login</h2>
+                    <input id="correo" type="email" name="correo" placeholder="Correo"  required>
+                    <input id="contrasena" type="password" name="contrasena" placeholder="Contrasena"  required>
+                    <input type="submit" id="login" name="login" value="Iniciar Sesión" required />
+                </form>
+            </div>
+        </div>
+        <div id="fondo1"></div>
     </div>
-
-
 </body>
 
 </html>

@@ -35,10 +35,16 @@ input {
     background-color: #333333;
     color: white;
 }
-#login{
+#crear{
     background-color: #E04A4A;
 }
-#login:hover{
+#crear:hover{
+    background-color: #52B6C6;
+}
+#cancelar{
+    background-color: #E04A4A;
+}
+#cancelar:hover{
     background-color: #52B6C6;
 }
 #fondo1 {
@@ -54,7 +60,6 @@ input {
     /* background-repeat: no-repeat;  */
     /* background-attachment: contain; */
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
 }
 * {
@@ -69,7 +74,7 @@ input {
 }
 
 .ancholetras {
-    top: 270px;
+    top: 100px;
     position: absolute;
     width: 100%;
     margin: auto;

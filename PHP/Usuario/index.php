@@ -17,9 +17,7 @@
         <?php
         include("cabecera.php");
         ?>
-
     </div>
-
     <div class="contenedor">
 
 

@@ -25,7 +25,6 @@ header {
     width: 20%;
     height: 70px;
     float: left;
-
 }
  
 header nav {
@@ -35,9 +34,7 @@ header nav {
     display: flex;
     padding-top:10px;
     z-index:1000;
-    margin-left: 650px;
-
-    
+    margin-left: 650px;    
 }
 header nav ul {
     list-style:none;
@@ -79,18 +76,16 @@ header nav ul li .children li {
 }
 header nav ul li .children li a {
     display: block;
-
-    
-
 }
 nav ul li ul li a{
-    color: aqua;
+    color: white;
+    background-color: #333333;
 }
 header nav ul li a span {
 	position: relative;
 	top:1px;
 	margin-right:0;
-	margin-left:10px;
+	margin-left:20px;
 }
 
 @media screen and (max-width: 420px) {
@@ -173,7 +168,7 @@ header nav ul li a span {
         
     }
     header nav ul li .children li a {
-		margin-left:20px;
+		margin-left:100px;
     }
     
 	

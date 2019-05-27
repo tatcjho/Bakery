@@ -20,12 +20,12 @@
 
 
     <div class="contenedor">
-        <form action="../controladores/login.php" method="POST">
+        <form action="loginEmp2.php" method="POST">
             <h2>Login</h2>
-            <input type="email" name="correo" placeholder="correo"  required>
-            <input type="password" name="contrasena" placeholder="contrasena"  required>
+            <input id="correo" type="email" name="correo" placeholder="correo"  required>
+            <input id="contrasena" type="password" name="contrasena" placeholder="contrasena"  required>
 
-            <input type="submit" id="boton" name="login" value="Iniciar Sesión" required />
+            <input type="submit" id="login" name="login" value="Iniciar Sesión" required />
         </form>
 
     </div>

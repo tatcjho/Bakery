@@ -34,7 +34,7 @@
 
     <div class="sub">
             <div class="tit">
-                <h4>Tortas & Cupcakes</h4>
+                <h4>Panes</h4>
             </div>
             <div class="hiper">
                 <a href="pan.php">Panes</a>

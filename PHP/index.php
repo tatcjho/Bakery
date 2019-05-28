@@ -50,13 +50,13 @@
                     de la vida, grandes y pequeños.
                 </p>
                 <br>
-                <h4> MISION</h4>
+                <h5> Misión</h5>
                 <p>
                     Somos una empresa cuya misión es ofrecer productos de panadería, repostería, cafetería y refrigerios en general de la más alta calidad con un excelente sabor y aun precio accesible.
                     Establecer un liderazgo con la colaboración y creatividad de nuestro talento humano, utilizando las mejores materias primas del mercado para satisfacer a nuestros clientes.
                 </p>
                 <br>
-                <h4>VISION</h4>
+                <h5>Visión</h5>
                 <p>
                     Ser una empresa líder en el negocio de panadería y repostería reconocida en la zona norte del país. Destacarnos por la calidad y sabor de nuestros productos, atención y servicio al cliente.
                     Utilizando los más altos estándares de calidad y tecnología de vanguardia en nuestros procesos productivos.

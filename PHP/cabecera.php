@@ -44,9 +44,10 @@
                         <li><a href="../PHP/cake.php">Tortas</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
                 <li><a href="login.php">Iniciar Sesion</a></li>
+                <li><a href="#">Carrito(0)</a></li>
+
             </ul>
         </nav>
 

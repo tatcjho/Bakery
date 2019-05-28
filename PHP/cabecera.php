@@ -42,7 +42,6 @@
                         <li><a href="../PHP/pan.php">Panes</a></li>
                         <li><a href="../PHP/cookies.php">Galletas</a></li>
                         <li><a href="../PHP/cake.php">Tortas</a></li>
-                        <li> <a href="../PHP/cookies.php">Cupcake</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Pedidos</a></li>

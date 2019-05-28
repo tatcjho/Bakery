@@ -17,7 +17,6 @@
             <a href="sucuCuenca.php">Cuenca</a>
             <a href="sucuQuito.php">Quito</a>
             <a href="sucuGuayaquil.php">Guayaquil</a>
-
         </div>
 
     </div>

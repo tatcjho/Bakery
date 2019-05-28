@@ -28,7 +28,6 @@
     justify-content: space-between;
 
 }
-
 .contenido .tit {
     width: 40%;
     display: flex;
@@ -145,7 +144,6 @@
 
  
 }
-
 @media screen and (max-width: 420px){
     .sub{
         display: flex;

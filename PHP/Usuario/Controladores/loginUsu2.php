@@ -1,10 +1,7 @@
 <?php
-
-include '../../Conexion/conexionBD.php'; 
- 
+    include '../../Conexion/conexionBD.php'; 
     $usuario = isset($_POST["correo"]) ? trim($_POST["correo"]) : null;     
     $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null; 
- 
     $user = "SELECT * FROM usuario WHERE usu_rol='USUARIO' AND usu_correo = '$usuario' and usu_password = MD5('$contrasena')"; 
     $admin = "SELECT * FROM usuario WHERE usu_rol='ADMINISTRADOR' AND usu_correo = '$usuario' and usu_password = MD5('$contrasena')"; 
     $empresa = "SELECT * FROM empresa WHERE emp_correo='$usuario' and emp_password = MD5('$contrasena')";

@@ -13,7 +13,7 @@
     <footer>
         <div class="piePagina">
                 <div class="diseno">
-                    <label>&copy; 2019 Todos los Derechos Reservados | <a href="index.php">Sweet Fest</a> </label><br>
+                    <label>&copy; 2019 Todos los Derechos Reservados | <a href="index.php">CocoLate</a> </label><br>
                     <label> Diseño y programación realizado por: </label><br>
                     <p>
                         <a href="https://www.facebook.com/tatcjho.98" target="_BLANK">Tatiana Cárdenas |</a>

@@ -24,7 +24,7 @@
                     <input id="correo" type="email" name="correo" placeholder="Correo"  required>
                     <input id="contrasena" type="password" name="contrasena" placeholder="Contrasena"  required>
                     <input type="submit" id="login" name="login" value="Iniciar Sesión" required />
-                    <a href="Usuario/crear_usuario.php" id="registrar">Registrarse</a>
+                    <a href="Usuario/crear_usuario.php" id="registrar">|Registrarse|</a>
                 </form>
             </div>
         </div>

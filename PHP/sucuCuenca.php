@@ -29,10 +29,6 @@
             ?>
 
         </div>
-
-    
-
-
         <div class="conte">
             <h1>Acerca de nostros</h1>
 

@@ -36,25 +36,33 @@
 
                 <div class="columnasx4">
                     <img src="../images/tortas/caramel-cake.jpg" alt="">
-                    <a href="#COMPRA PANES">Torta de Caramelo &nbsp; $30.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA PANES">Torta de Caramelo &nbsp; $30.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/tortas/carrot-cake.16624e888a61bd952d67b8980e2a6bdf.jpg" alt="">
-                    <a href="#COMPRA TORTAS">Torta de Zanahoria &nbsp; $35.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA TORTAS">Torta de Zanahoria &nbsp; $35.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/tortas/chocolate-fudge-cake.jpg" alt="">
-                    <a href="#COMPRA GALLETAS">Torta de Chocolate &nbsp; $39.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA GALLETAS">Torta de Chocolate &nbsp; $39.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/tortas/cookies-and-cream-cake.jpg" alt="">
-                    <a href="#COMPRA PANES">Torta Oreo &nbsp; $29.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA PANES">Torta Oreo &nbsp; $29.95</a>
+                    </div>
                 </div>
             </section>
 
@@ -65,26 +73,34 @@
             <section class="contenedor-columnas-1">
                 <div class="columnasx4">
                     <img src="../images/tortas/rainbow-cake.jpg" alt="">
-                    <a href="#COMPRA TORTAS">Torta Arco Iris &nbsp; $60.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA TORTAS">Torta Arco Iris &nbsp; $60.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/tortas/red-velvet-cake.jpg" alt="">
-                    <a href="#COMPRA GALLETAS">Torta Red Velvet &nbsp; $50.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA GALLETAS">Torta Red Velvet &nbsp; $50.95</a>
+                    </div>
 
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/tortas/vanilla-fudge-cake.jpg" alt="">
-                    <a href="#COMPRA PANES">Torta de Vainilla &nbsp; $44.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA PANES">Torta de Vainilla &nbsp; $44.95</a>
+                    </div>
 
                 </div>
 
                 <div class="columnasx4">
                     <img src="../images/tortas/torta selva negra.jpg" alt="">
-                    <a href="#COMPRA PANES">torta selva negra &nbsp; $49.95</a>
+                    <div class="prueba">
+                        <a href="#COMPRA PANES">Torta Selva Negra &nbsp; $49.95</a>
+                    </div>
 
                 </div>
 

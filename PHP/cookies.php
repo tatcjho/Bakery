@@ -36,25 +36,33 @@
 
                 <div class="columnasx4">
                     <img src="../images/galletas/chocolate-chip-cookies.jpg" alt="">
-                    <a href="#COMPRA PANES">Chocolate Chips &nbsp; $15.95</a>
+                    <div class="prueba" >
+                        <a href="#COMPRA PANES">Chocolate Chips &nbsp; $15.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/galletas/cookie-tray.jpg" alt="">
-                    <a href="#COMPRA TORTAS">Galletas de Mantequilla &nbsp; $9.95</a>
+                    <div class="prueba" >
+                        <a href="#COMPRA TORTAS">Galletas de Mantequilla &nbsp; $9.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/galletas/cookies.jpg" alt="">
-                    <a href="#COMPRA GALLETAS">Galletas Jengibre &nbsp; $10.95</a>
+                    <div class="prueba" >
+                        <a href="#COMPRA GALLETAS">Galletas Jengibre &nbsp; $10.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/galletas/Galletas María.jpg" alt="">
-                    <a href="#COMPRA PANES">Galletas María &nbsp; $25.95</a>
+                    <div class="prueba" >
+                        <a href="#COMPRA PANES">Galletas María &nbsp; $25.95</a>
+                    </div>
                 </div>
             </section>
 
@@ -65,26 +73,34 @@
             <section class="contenedor-columnas-1">
                 <div class="columnasx4">
                     <img src="../images/galletas/rainbow-cookie.jpg" alt="">
-                    <a href="#COMPRA TORTAS">Galletas Arcoiris &nbsp; $19.95</a>
+                    <div class="prueba" >
+                        <a href="#COMPRA TORTAS">Galletas Arcoiris &nbsp; $19.95</a>
+                    </div>
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/galletas/raspberry-almond-cookie.jpg" alt="">
-                    <a href="#COMPRA GALLETAS">Galletas de Almendras &nbsp; $14.95</a>
+                    <div class="prueba" >
+                        <a href="#COMPRA GALLETAS">Galletas Almendras &nbsp; $14.95</a>
+                    </div>
 
                 </div>
 
 
                 <div class="columnasx4">
                     <img src="../images/galletas/salted-pistachio-cookie.jpg" alt="">
-                    <a href="#COMPRA PANES">Galletas de Pistacho&nbsp; $12.95</a>
+                    <div class="prueba" >
+                         <a href="#COMPRA PANES">Galletas de Pistacho&nbsp; $12.95</a>
+                    </div>
 
                 </div>
 
                 <div class="columnasx4">
                     <img src="../images/galletas/Galletas de menta y chocolate.jpg" alt="">
-                    <a href="#COMPRA PANES">Menta y chocolate &nbsp; $49.95</a>
+                    <div class="prueba" >
+                         <a href="#COMPRA PANES">Menta y chocolate &nbsp; $49.95</a>
+                    </div>
 
                 </div>
 

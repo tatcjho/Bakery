@@ -25,11 +25,21 @@
     /* height: 70px; */
     padding-top: 10px;
     margin: auto;
+  
 }
+
+.tit h4{
+  
+        font-size: 30px;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 30px;
+    
+}
+
 
 .sub .tit h4{
     font-size: 50px;
-    font-family: rale;
+    font-family: 'Heebo', sans-serif;   
     text-align: center;
 }
 
@@ -47,10 +57,10 @@
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 25px;
     text-transform: uppercase;
     border-right: solid gray;
-    font-family: akro;
+    font-family: 'Heebo', sans-serif;   
 }
 
 .sub .hiper a:hover {
@@ -76,11 +86,14 @@
     box-sizing: border-box;
 }
 .columnasx4 img{
-    width: 100%;
+    width: 90%;
     height: 200px;
     padding-bottom: 10px;
+    padding-left: 30px;
+    padding-inline-end: 25px;
 }
 .columnasx4 a{
+    padding-top: 50px;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -91,6 +104,11 @@
     background-color:#c02d54;
     border-radius: 10px;
 
+}
+
+
+.prueba{
+    text-align: center;
 }
 
 

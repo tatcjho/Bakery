@@ -47,7 +47,7 @@
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="sesiones.html">Iniciar Sesion</a></li>
+                <li><a href="login.php">Iniciar Sesion</a></li>
             </ul>
         </nav>
 

@@ -79,9 +79,6 @@ header nav ul li .children li {
 }
 header nav ul li .children li a {
     display: block;
-
-    
-
 }
 nav ul li ul li a{
     color: white;
@@ -141,11 +138,8 @@ header nav ul li a span {
 		float: left;
         font-size: 40px;
         margin-right: 60%;
-
-
     }
     header nav {
-        
         width: 50%;
         height: 70px;
 		height: calc(52% - 80px);

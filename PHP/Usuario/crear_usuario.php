@@ -31,7 +31,7 @@
                     <br>
                     <input type="password" id="contrasena" name="contrasena" value="" placeholder="Contraseña" required/>         
                     <br>      
-                    <input type="submit" id="crear" name="crear" value="Registrarse" />         
+                    <input type="submit" id="crear" name="crear" value="Registrase" />        
                     <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />     
                 </form> 
             </div>

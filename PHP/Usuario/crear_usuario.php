@@ -19,10 +19,6 @@
                     <h2>Registrarse</h2>
                     <input type="text" id="cedula" name="cedula" value="" placeholder="Cedula" required/>         
                     <br>
-
-                    <input type="text" id="rol" name="rol" value="" placeholder="Rol" required/>         
-                    <br>
-
                     <input type="text" id="nombreApellido" name="nombreApellido" value="" placeholder="Nombres y Apellidos" required/>         
                     <br> 
                     <input type="text" id="direccion" name="direccion" value="" placeholder="Direccion" required/>         

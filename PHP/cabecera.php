@@ -39,21 +39,15 @@
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="pan.php">Panes</a></li>
-                        <li><a href="cookies.php">Galletas</a></li>
-                        <li><a href="cake.php">Tortas</a></li>
-                        <li> <a href="#">Cupcake</a></li>
+                        <li><a href="../PHP/pan.php">Panes</a></li>
+                        <li><a href="../PHP/cookies.php">Galletas</a></li>
+                        <li><a href="../PHP/cake.php">Tortas</a></li>
+                        <li> <a href="../PHP/cookies.php">Cupcake</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li class="submenu">
-                    <a href="#">Login<span class="fa fa-caret-down"></span></a>
-                    <ul class="children">
-                        <li><a href="Usuario/index.php">Usuarios</a></li>
-                        <li><a href="Empresa/index.php">Empresas</a></li>
-                    </ul>
-                </li>
+                <li><a href="sesiones.html">Iniciar Sesion</a></li>
             </ul>
         </nav>
 

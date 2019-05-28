@@ -30,24 +30,24 @@
 
         </div>
         <div class="logo">
-            <p><a href="index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="index.php"><img src="../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li class="submenu">
-                    <a href="#">Productos <span class="fa fa-caret-down"></span></a>
+                    <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="pan.php">Panes</a></li>
-                        <li><a href="cookies.php">Galletas</a></li>
-                        <li><a href="cake.php">Tortas</a></li>
+                        <li><a href="../pan.php">Panes</a></li>
+                        <li><a href="../cookies.php">Galletas</a></li>
+                        <li><a href="../cake.php">Tortas</a></li>
                         <li> <a href="#">Cupcake</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="login.php">Login</a></li>
+                <li><a href="sesiones.html">Iniciar Sesion</a></li>
             </ul>
         </nav>
 

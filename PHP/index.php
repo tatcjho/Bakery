@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
     <link rel="stylesheet" href="../CSS/index1.css">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+=======
+>>>>>>> a23057a83de97ace1aec4fa5c27cee4ac8ce6538
 
 
 
@@ -18,12 +21,9 @@
         <?php
         include("cabecera.php");
         ?>
-
     </div>
 
     <div class="contenedor">
-
-
         <div class="ancholetras">
             <div class="texto">
                 <h2>Bakery Lovers</h2>

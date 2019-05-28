@@ -84,7 +84,8 @@ header nav ul li .children li a {
 
 }
 nav ul li ul li a{
-    color: aqua;
+    color: white;
+    background-color: #333333;
 }
 header nav ul li a span {
 	position: relative;

@@ -50,7 +50,7 @@ input {
     rgba(211, 135, 20, .5), 
     rgba(29, 241, 171, .5), 
     rgba(7, 109, 150, .4), 
-    rgba(16, 167, 243, .5)), url(../../images/5.jpg);
+    rgba(16, 167, 243, .5)), url(../images/5.jpg);
     /* background-repeat: no-repeat;  */
     /* background-attachment: contain; */
     background-attachment: fixed;

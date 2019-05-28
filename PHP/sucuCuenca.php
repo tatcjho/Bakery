@@ -30,19 +30,7 @@
 
         </div>
 
-        <section class="columna">
-
-            <div class="imagen">
-                <img src="../images/panederias/cuenca.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam, eligendi placeat labore,
-                    neque voluptate expedita dicta aliquam quia voluptatem impedit illo sit fugit ea! Ratione eaque
-                    fugiat voluptatibus dolorum dignissimos? Labore temporibus obcaecati iusto vero, harum tempore
-                    corporis, quas nostrum aperiam inventore ut maxime odio debitis illum dignissimos ad.
-                </p>
-            </div>
-
-        </section>
+    
 
 
         <div class="conte">

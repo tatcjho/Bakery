@@ -16,9 +16,11 @@
     rgba(128, 0, 128, .5), 
     rgba(255, 0, 255, .3), 
     rgba(211, 135, 20, .5), 
+    rgba(142, 142, 142, .5),
+    rgba(142, 142, 142, .5),
     rgba(29, 241, 171, .5), 
     rgba(7, 109, 150, .4), 
-    rgba(16, 167, 243, .5)), url(../images/5.jpg);
+    rgba(16, 167, 243, .5)),  url(../images/5.jpg);
     /* background-repeat: no-repeat;  */
     /* background-attachment: contain; */
     background-attachment: fixed;
@@ -43,37 +45,41 @@
 }
 
 .texto h2 {
-    color: rgb(0, 0, 0);
-    font-size: 72px;
+    color: lightcyan;
+    font-size: 100px;
     margin: auto;
     font-family: one;
 }
 
 .texto p {
     color: aliceblue;
-    padding-top: 50px;
-    font-size: 30px;
+    padding-top: 20px;
+    font-size: 35px;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 .click {
     width: 20%;
     height: auto;
-    border-bottom: 3px solid #555;
+    border: solid  orange;
     margin: auto;
+    padding: 10px 50px;
+
 }
 
-.click:hover {
-    border: 3px solid dodgerblue;
+.click a:hover {
+    /* border: 3px solid dodgerblue; */
+    color: fuchsia;
 }
 
 .click a {
-    color: firebrick;
+    color: whitesmoke;
     font-size: 25px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: ultra;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* contenido */
@@ -110,6 +116,7 @@
 #int h4 {
     font-size: 35px;
     text-align: center;
+    
 }
 
 #int p {
@@ -125,15 +132,10 @@
     padding-top: 30px;
 }
 
-.line {
-    width: 100%;
-    padding-top: 70px;
-}
 
-.linea {
-    padding-top: 50px;
-    width: 73%;
-    border-top: 1px solid #555;
+.contenedor hr{
+    width: 70%;
+    margin: 0 auto;
 }
 
 .columna {
@@ -147,24 +149,43 @@
     float: left;
     padding: 20px 10px;
     box-sizing: border-box;
+
 }
 
 .columnasx3 img {
     width: 100%;
     height: auto;
     padding-bottom: 10px;
+
 }
 
 .columnasx3 a {
     font-size: 20px;
     color: white;
     text-align: center;
+
+
     padding: 10px;
     margin: 10px;
     text-decoration: none;
     font-family: 'PT Sans Narrow', sans-serif;
     background-color: #c02d54;
     border-radius: 10px;
+}
+.prueba{
+    text-align: center;
+}
+h3{
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+h5{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
 }
 
 @media screen and (max-width:420px) {
@@ -205,4 +226,18 @@
     .columnasx3 a {
         font-size: 10px;
     }
+}
+@font-face {
+    font-family: one;
+    src: url(../fuentes/Pacifico-Regular.ttf)
+}
+
+@font-face {
+    font-family: rale;
+    src: url(../fuentes/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: ultra;
+    src: url(../fuentes/StintUltraExpanded-Regular.ttf);
 }

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, user-scaleble=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../../CSS/index1.css">
+    <link rel="stylesheet" href="../CSS/index1.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
 
 
@@ -42,7 +43,7 @@
             <div class="imagenbienv">
                 <img src="../images/69.jpg" alt="" id="img">
             </div>
-        <!-- hoal -->
+            <!-- hoal -->
 
             <div id="int">
                 <h4>Acerca de Nosotros</h4>
@@ -56,12 +57,29 @@
                     cliente es nuestro objetivo final, además estamos aquí para ayudarlo a celebrar los momentos
                     de la vida, grandes y pequeños.
                 </p>
+                <br>
+                <h5> MISION</h5>
+                <p>
+                    Somos una empresa cuya misión es ofrecer productos de panadería, repostería, cafetería y refrigerios en general de la más alta calidad con un excelente sabor y aun precio accesible.
+                    Establecer un liderazgo con la colaboración y creatividad de nuestro talento humano, utilizando las mejores materias primas del mercado para satisfacer a nuestros clientes.
+                </p>
+                <br>
+                <h5>VISION</h5>
+                <p>
+
+
+                    Ser una empresa líder en el negocio de panadería y repostería reconocida en la zona norte del país. Destacarnos por la calidad y sabor de nuestros productos, atención y servicio al cliente.
+                    Utilizando los más altos estándares de calidad y tecnología de vanguardia en nuestros procesos productivos.
+
+                </p>
             </div>
 
 
 
         </section>
 
+        <br>
+        <hr>
 
         <div class="line">
             <div class="linea"></div>
@@ -72,18 +90,24 @@
 
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
-                        <a href="pan.php">COMPRAR PANES</a>
+                        <div class="prueba">
+                            <a href="pan.php">COMPRAR PANES</a>
+                        </div>
                     </div>
 
 
                     <div class="columnasx3">
                         <img src="../images/tortas/rainbow-cake2.jpg" alt="">
-                        <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
-
+                        <div class="prueba">
+                            <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
+                        </div>
                     </div>
                     <div class="columnasx3">
                         <img src="../images/galletas/chocolate-chip-cookies.jpg" alt="">
-                        <a href="cookies.php">COMPRAR GALLETAS</a>
+                        <div class="prueba">
+                            <a href="cookies.php">COMPRAR GALLETAS</a>
+                        </div>
+
                     </div>
 
                 </section>
@@ -92,7 +116,7 @@
 
 
     </div>
-    
+
     <?php
     include("piepagina.php");
     ?>

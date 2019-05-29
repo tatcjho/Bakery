@@ -2,9 +2,8 @@
     session_start();
     if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
         header("Location: ../login.php");
-    }else if($_SESSION['usu_rol'] == "A"){
-        header("Location: ../Administrador/index_administrador.php");
     }
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">

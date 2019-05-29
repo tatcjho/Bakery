@@ -30,9 +30,7 @@
         <nav>
             <ul>
                 <li><a href="index_administrador.php">Inicio</a></li>
-                <li><a href="#">Usuarios</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Pedidos</a></li>
+                
                 <li class="submenu">
                     <a href="#">Stalin Figueroa<span class="fa fa-caret-down"></span></a>
                     <ul class="children">

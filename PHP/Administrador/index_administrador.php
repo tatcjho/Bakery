@@ -68,20 +68,15 @@
         <div class="line">
             <div class="linea"></div>
             <section class="wap">
-
                 <section class="columna">
                     <h3>PIDA COCOLATE BAKERY A DOMICILIO</h3>
-
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
                         <a href="pan.php">COMPRAR PANES</a>
                     </div>
-
-
                     <div class="columnasx3">
                         <img src="../images/tortas/rainbow-cake2.jpg" alt="">
                         <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
-
                     </div>
                     <div class="columnasx3">
                         <img src="../images/galletas/chocolate-chip-cookies.jpg" alt="">
@@ -91,14 +86,7 @@
                 </section>
             </section>
         </div>
-
-
     </div>
-    
-    <?php
-    include("piepagina.php");
-    ?>
-
 </body>
 
 </html>

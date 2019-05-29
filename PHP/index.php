@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,7 +75,7 @@
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
                         <div class="prueba">
-                            <a href="pan.php">COMPRAR PANES</a>
+                            <a href="panes.php">COMPRAR PANES</a>
                         </div>
                     </div>
 
@@ -96,12 +97,10 @@
                 </section>
             </section>
         </div>
-
     </div>
     <?php
     include("piepagina.php");
     ?>
-
 </body>
 
 </html>

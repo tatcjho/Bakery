@@ -24,14 +24,13 @@
             </div>
         </div>
         <div class="logo">
-            <p><a href="index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="index_administrador.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>
             <ul>
                 <li><a href="index_administrador.php">Inicio</a></li>
                 <li><a href="#">Usuarios</a></li>
-                <li><a href="#">Productos</a></li>
                 <li><a href="#">Pedidos</a></li>
                 <li class="submenu">
                     <a href="#">Stalin Figueroa<span class="fa fa-caret-down"></span></a>
@@ -41,12 +40,6 @@
                 </li>
             </ul>
         </nav>
-
-
     </header>
-
-
-
 </body>
-
 </html>

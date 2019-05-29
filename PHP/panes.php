@@ -26,7 +26,7 @@
     <div class="container">
         <div class="sub">
             <div class="tit">
-                <h4>Galletas</h4>
+                <h4>Panes</h4>
             </div>
             <div class="hiper">
                 <a href="panes.php">Panes</a>
@@ -40,14 +40,14 @@
         <div class="container">
         <?php
             include 'Conexion/conexionBD.php';
-            $sql = "SELECT * FROM producto WHERE cat_id=2";
+            $sql = "SELECT * FROM producto WHERE cat_id=1";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                     echo "<div class='row'>";
                         echo "<div class='col-3'>";
                             echo "<div class='card'>";
-                                echo "<img class='card-img-top' src='../images/galletas/".$row['produ_imagen']."' alt=''>";
+                                echo "<img class='card-img-top' src='../images/panes/".$row['produ_imagen']."' alt=''>";
                                 echo "<div class='card-body'>";
                                     echo "<h5 class='card-title'>$".$row['produ_precio']."</h5>";
                                     echo "<p class='card-text'>".$row['produ_nombre']."</p>";

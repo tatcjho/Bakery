@@ -38,7 +38,7 @@
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="../../pan.php">Panes</a></li>
+                        <li><a href="../panes.php">Panes</a></li>
                         <li><a href="../../cookies.php">Galletas</a></li>
                         <li><a href="../../cake.php">Tortas</a></li>
                         <li> <a href="#">Cupcake</a></li>
@@ -55,12 +55,7 @@
                 </li>
             </ul>
         </nav>
-
-
     </header>
-
-
-
 </body>
 
 </html>

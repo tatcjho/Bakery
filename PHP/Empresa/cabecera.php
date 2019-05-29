@@ -9,7 +9,6 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../../CSS/index.css">
-
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js"></script>
 
@@ -30,24 +29,29 @@
 
         </div>
         <div class="logo">
-            <p><a href="index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="index_empresa.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>
             <ul>
-                <li><a href="index.php">Inicio</a></li>
+                <li><a href="index_empresa.php">Inicio</a></li>
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="../pan.php">Panes</a></li>
-                        <li><a href="../cookies.php">Galletas</a></li>
-                        <li><a href="../cake.php">Tortas</a></li>
+                        <li><a href="../panes.php">Panes</a></li>
+                        <li><a href="../../cookies.php">Galletas</a></li>
+                        <li><a href="../../cake.php">Tortas</a></li>
                         <li> <a href="#">Cupcake</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Pedidos</a></li>
-                <li><a href="#">Contactos</a></li>
-                <li><a href="sesiones.html">Iniciar Sesion</a></li>
+                <li><a href="agregar_producto.php"s>Agregar Producto</a></li>
+                <li class="submenu">
+                    <a href="#"><?php echo $_SESSION['emp_nombre'] ?><span class="fa fa-caret-down"></span></a>
+                    <ul class="children">
+                        <li><a href="../Conexion/logout.php">Cerrar Sesion</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 

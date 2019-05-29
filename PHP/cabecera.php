@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scaleble=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
@@ -31,13 +30,13 @@
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="../PHP/pan.php">Panes</a></li>
+                        <li><a href="panes.php">Panes</a></li>
                         <li><a href="../PHP/cookies.php">Galletas</a></li>
                         <li><a href="../PHP/cake.php">Tortas</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="login.php">Iniciar Sesion</a></li>
+                <li><a href='login.php'>Iniciar Sesion</a></li>
                 <li><a href="#">Carrito(0)</a></li>
 
             </ul>

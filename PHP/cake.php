@@ -39,7 +39,7 @@
                 <h4>Tortas & Cupcakes</h4>
             </div>
             <div class="hiper">
-                <a href="pan.php">Panes</a>
+                <a href="panes.php">Panes</a>
                 <a href="cake.php">Tortas & Cupcakes</a>
                 <a href="cookies.php">Galletas</a>
                 <a href="#Favoritos">Favoritos</a>

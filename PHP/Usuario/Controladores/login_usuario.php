@@ -15,6 +15,7 @@
         $_SESSION['usu_nombres']= $row['usu_nombreApellido'];
         $_SESSION['usu_correo']= $row['usu_correo'];
         if ($row['usu_rol'] == "U"){
+            
             header("Location: ../index_usuario.php");
             exit();  
         }else{
@@ -22,7 +23,7 @@
             exit();  
         }
     }else{
-        header("Location: ../../login.php");
+        header("Location: ../../loginss.php");
     }
 
     $result1 = $conn->query($empresa);

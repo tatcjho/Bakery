@@ -36,7 +36,20 @@
                     </ul>
                 </li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href='login.php'>Iniciar Sesion</a></li>
+                <?php
+                    session_start();
+                    if(isset($_SESSION['isLogged'])){
+                        echo "<li class='submenu'>";
+                            echo "<a href=''>".$_SESSION['usu_nombres']."<span class='fa fa-caret-down'></span></a>";
+                            echo "<ul class='children'>";
+                                echo "<li><a href='Usuario/editarPerfil.php'>Editar Perfil</a></li>";
+                                echo "<li><a href='Conexion/logout.php'>Cerrar Sesion</a></li>";
+                            echo "</ul>";
+                        echo"</li>";
+                    }else{
+                        echo "<li><a href='login.php'>Iniciar Sesion</a></li>";        
+                    }
+                ?>
                 <li><a href="#">Carrito(0)</a></li>
 
             </ul>

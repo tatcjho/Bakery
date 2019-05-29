@@ -23,13 +23,15 @@
         $img_nombre=$_FILES['img']['name'];
         $sql = "INSERT INTO usuario VALUES (0, 'U', '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento','$img_nombre' , 'N', 'N', '$fecha_Creacion', null)";
         if ($conn->query($sql) === TRUE) {
-            echo "<p>Usuario Creado</p>";
+            echo "Usuario Creado";
             header('Refresh: 1; URL=../../index.php');
         }else{
             if($conn->errno == 1062){
                 echo "<p class='error'>El usuario ya se encuentra registrado en el sistema </p>";
+                header('Refresh: 1; URL=../crear_usuario.php');
             }else{
-                echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";    
+                echo "<h5 class='error'>Error: " . mysqli_error($conn) . "</h5>";
+                header('Refresh: 1; URL=../crear_usuario.php');
             }
         }
     }

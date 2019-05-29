@@ -16,7 +16,7 @@
         $_SESSION['usu_correo']= $row['usu_correo'];
         if ($row['usu_rol'] == "U"){
             
-            header("Location: ../index_usuario.php");
+            header("Location: ../../index.php");
             exit();  
         }else{
             header("Location: ../../Administrador/index_administrador.php");

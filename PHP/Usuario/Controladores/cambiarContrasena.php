@@ -32,14 +32,14 @@
             "WHERE usu_codigo=$codigo";
             
             if($conn->query($sqlContrasena2) === TRUE){
-                echo "Contraseña actualizada<br>";
+                echo "Contraseña actualizada";
                 header('Refresh: 2; URL=../../logout.php');
             }else {
                 echo "<p>Error: " . mysqli_error($conn) . "</p>"; 
             }
         }else {
             header('Refresh: 1; URL=../editarContrasena.php');
-            echo "<p>Las contraseñas no coinciden</p>"; 
+            echo "Las contraseñas no coinciden"; 
         }
         $conn->close();
         ?>

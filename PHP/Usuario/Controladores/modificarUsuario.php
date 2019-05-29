@@ -37,7 +37,7 @@
         "WHERE usu_codigo=$codigo";                                   
         if ($conn->query($sql) === TRUE) {
             echo "Datos personales actualizados correctamente";
-            header('Refresh: 2; URL=../index_usuario.php');
+            header('Refresh: 2; URL=../../index.php');
         }else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
         }

@@ -29,12 +29,12 @@
 
         </div>
         <div class="logo">
-            <p><a href="index_usuario.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="../index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>
             <ul>
-                <li><a href="index_usuario.php">Inicio</a></li>
+                <li><a href="../index.php">Inicio</a></li>
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">

@@ -19,9 +19,9 @@
                     <h2>Registrarse</h2>
                     <input type="text" id="cedula" name="cedula" value="" placeholder="Cedula" required/>         
                     <br>
-                    <input type="text" id="nombreApellido" name="nombreApellido" value="" placeholder="Nombres y Apellidos" required/>         
+                    <input type="text" id="nombreApellido" name="nombreApellido" style="text-transform:uppercase" value="" placeholder="Nombres y Apellidos" required/>         
                     <br> 
-                    <input type="text" id="direccion" name="direccion" value="" placeholder="Direccion" required/>         
+                    <input type="text" id="direccion" name="direccion" style="text-transform:uppercase" value="" placeholder="Direccion" required/>         
                     <br> 
                     <input type="text" id="telefono" name="telefono" value="" placeholder="Telefono" required/>         
                     <br>                        

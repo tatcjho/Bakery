@@ -18,12 +18,5 @@ if($stm->execute())
 else{
     echo 'error';
 }
-
 header("Location: cuenta.php?codigo=$codigo");   
-
-
-
-
-
-
 ?>

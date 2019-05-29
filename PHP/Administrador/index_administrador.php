@@ -2,6 +2,8 @@
     session_start();
     if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
         header("Location: ../login.php");
+    }else if($_SESSION['usu_rol'] == "U"){
+        header("Location: ../index.php");
     }
 ?>
 <!DOCTYPE html>
@@ -18,6 +20,15 @@
         <?php
         include("cabecera.php");
         ?>
+    </div>
+    <div class="contenedor">
+        <div class="ancholetras">
+            <div class="texto">
+                <h2>Bakery Lovers</h2>
+                <p>EL PLACER DE COMER AHORA MÁS CERCA DE TI, VISITA NUESTRAS SUCURSALES</p>
+            </div>
+        </div>
+        <div id="fondo1"></div>
     </div>
 </body>
 </html>

@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
+        header("Location: ../login.php");
+    }else if($_SESSION['usu_rol'] == "U"){
+        header("Location: ../index.php");
+    }
+?>
 <html>
 <head>
     <meta charset="UTF-8">

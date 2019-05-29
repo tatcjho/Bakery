@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: rale;
 }
 
 .contenido {
@@ -99,7 +98,6 @@
     height: 200px;
     padding-bottom: 10px;
     padding-left: 30px;
-    padding-inline-end: 25px;
 }
 .col-3 a{
     padding-top: 50px;
@@ -109,10 +107,8 @@
     padding: 10px;
     margin: 10px;
     text-decoration: none;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: sans-serif;
     background-color:#c02d54;
-    border-radius: 10px;
-
 }
 
 .col-3 .card-body{
@@ -120,31 +116,23 @@
 }
 
 .col-3 .btn-primary{
-    padding-top: 50px;
     font-size: 20px;
     color: white;
+    border: none;
     text-align: center;
     padding: 10px;
     margin: 10px;
     text-decoration: none;
-    font-family: 'PT Sans Narrow', sans-serif;
-    background-color:#c02d54;
-    border-radius: 10px;
+    background-color:#2098D1;
+}
+
+.col-3 .btn-primary:hover{
+    background-color:gray;
 }
 
 .prueba{
     text-align: center;
 }
-
-
-/* .prueba{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-width: 0 0 35vh 100vw;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-} */
 
 @media screen and (max-width: 420px){
     .sub {

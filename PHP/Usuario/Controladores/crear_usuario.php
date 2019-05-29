@@ -24,7 +24,7 @@
         $sql = "INSERT INTO usuario VALUES (0, 'U', '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento','$img_nombre' , 'N', 'N', '$fecha_Creacion', null)";
         if ($conn->query($sql) === TRUE) {
             echo "Usuario Creado";
-            header('Refresh: 1; URL=../../index.php');
+            header('Refresh: 1; URL=../../login.php');
         }else{
             if($conn->errno == 1062){
                 echo "<p class='error'>El usuario ya se encuentra registrado en el sistema </p>";

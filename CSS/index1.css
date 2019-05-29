@@ -120,6 +120,16 @@
     font-size: 35px;
     text-align: center;
     
+    
+}
+
+#int h5 {
+    font-size: 35px;
+    text-align: left;
+    color: #c02d54;
+    font-family: 'Oswald', sans-serif;
+
+    
 }
 
 #int p {

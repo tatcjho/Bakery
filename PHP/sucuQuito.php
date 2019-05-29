@@ -21,34 +21,29 @@
     <div class="contenido">
 
         <div class="sub">
-            <div class="tit">
-                <h4>Quito</h4>
-            </div>
+         
             <?php
             include("../archivosSecu/subcabecera.php");
             ?>
 
         </div>
-
-        <section class="columna">
-
-            <div class="imagen">
-                <img src="../images/panederias/quito.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam, eligendi placeat labore,
-                    neque voluptate expedita dicta aliquam quia voluptatem impedit illo sit fugit ea! Ratione eaque
-                    fugiat voluptatibus dolorum dignissimos? Labore temporibus obcaecati iusto vero, harum tempore
-                    corporis, quas nostrum aperiam inventore ut maxime odio debitis illum dignissimos ad.
-                </p>
+        <br>
+        
+        <div class="ancholetras">
+            <div class="texto">
+                <p>COCOLATE QUITO</p>
             </div>
+        </div>
+        <div class="fondo1"></div>
 
-        </section>
+        <br>
+        <br>
 
 
 
         <div class="conte">
-            <h1>Acerca de nostros</h1>
-
+            <h1>Acerca de nosotros</h1>
+            <br><br>
 
             <div class="contenedor">
 
@@ -82,25 +77,86 @@
                 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
                 <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
+
+
+
+
                 <script>
-                    var divMapa = document.getElementById('map');
+                    // Initialize and add the map
+                    function initMap() {
+                        var directionsService = new google.maps.DirectionsService;
+                        var directionsDisplay = new google.maps.DirectionsRenderer;
 
-                    navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+                        navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
 
-                    function fn_mal() {}
+                        function fn_mal() {}
 
-                    function fn_ok(rta) {
-                        var lat = rta.coords.latitude;
-                        var lon = rta.coords.longitude;
-                        var tienlat = '-0.163633'
-                        var tienlon = '-78.464009'
-                        console.log(lat, lon);
-                        sucursales(lat, lon, tienlat, tienlon);
+                        function fn_ok(rta) {
+                            var lat = rta.coords.latitude;
+                            var lon = rta.coords.longitude;
+
+                            var start = {
+                                lat: lat,
+                                lng: lon
+                            };
+
+                            var waypts = [{
+                                location: {
+                                    lat: -0.163633,
+                                    lng: -78.464009
+                                },
+                                stopover: true
+                            }, {
+                                location: {
+                                    lat: lat,
+                                    lng: lon
+                                },
+                                stopover: true
+                            }];
+
+                            console.log(start)
+
+
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 6,
+                                center: {
+                                    lat: waypts[0].location.lat,
+                                    lng: waypts[0].location.lng
+                                }
+                            });
+                            directionsDisplay.setMap(map);
+                            directionsService.route({
+                                origin: {
+                                    lat: waypts[0].location.lat,
+                                    lng: waypts[0].location.lng
+                                },
+                                destination: {
+                                    lat: waypts[1].location.lat,
+                                    lng: waypts[1].location.lng
+                                },
+                                waypoints: waypts,
+                                travelMode: google.maps.TravelMode.WALKING
+                            }, function(response, status) {
+                                if (status === 'OK') {
+                                    directionsDisplay.setDirections(response);
+                                } else {
+                                    window.alert('Directions request failed due to ' + status);
+                                }
+                            });
+
+
+                        }
+
                     }
                 </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2wESqJq6cIkEb7WMUZswtEoGVtyL4rkM&callback=initMap" async defer></script>
+
 
 
             </div>
+            <br>
+            <br>
+            <br>
             <br>
 
 

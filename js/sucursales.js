@@ -1,27 +1,30 @@
 function sucursales(lat, lon, tlat, tlon) {
 
-
     console.log(lat, lon, tlat, tlon)
+    
+    
 
-    var map = L.map('map').setView([lat, lon], 16);
+    var waypts = [{ location: { lat: lat, lng: lon }, stopover: true }, { location: { lat: tlat, lng: tlon }, stopover: true }];
+    console.log(waypts[1].location.lat)
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
 
-    L.marker([lat, lon]).addTo(map)
-        .bindPopup('SU UBICACION ACTUAL')
-        .openPopup();
 
-    L.marker([tlat, tlon]).addTo(map)
-        .bindPopup('UBICACION DE LA <br> TIENDA')
-        .openPopup();
 
-    L.Routing.control({
-        waypoints: [
-            L.latLng(lat, lon),
-            L.latLng(tlat, tlon)
-        ],
-        routeWhileDragging: true
-    }).addTo(map);
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 6,
+        center: { lat: waypts[0].location.lat, lng: waypts[0].location.lng }
+    });
+    directionsDisplay.setMap(map);
+    directionsService.route({
+        origin: { lat: waypts[0].location.lat, lng: waypts[0].location.lng },
+        destination: { lat: waypts[1].location.lat, lng: waypts[1].location.lng },
+        waypoints: waypts,
+        travelMode: google.maps.TravelMode.WALKING
+    }, function (response, status) {
+        if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+        } else {
+            window.alert('Directions request failed due to ' + status);
+        }
+    });
 }

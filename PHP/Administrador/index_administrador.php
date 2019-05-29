@@ -2,8 +2,8 @@
     session_start();
     if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
         header("Location: ../login.php");
-    }else if($_SESSION['usu_rol'] == "A"){
-        header("Location: ../Administrador/index_administrador.php");
+    }else if($_SESSION['usu_rol'] == "U"){
+        header("Location: ../Usuario/index_usuario.php");
     }
 ?>
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="../../CSS/index1.css">
 </head>
+
 <body>
     <div class="cabecera">
         <?php
@@ -73,18 +74,18 @@
 
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
-                        <a href="../pan.php">COMPRAR PANES</a>
+                        <a href="pan.php">COMPRAR PANES</a>
                     </div>
 
 
                     <div class="columnasx3">
                         <img src="../images/tortas/rainbow-cake2.jpg" alt="">
-                        <a href="../cake.php">COMPRAR TORTAS & CUPCAKES </a>
+                        <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
 
                     </div>
                     <div class="columnasx3">
                         <img src="../images/galletas/chocolate-chip-cookies.jpg" alt="">
-                        <a href="../cookies.php">COMPRAR GALLETAS</a>
+                        <a href="cookies.php">COMPRAR GALLETAS</a>
                     </div>
 
                 </section>

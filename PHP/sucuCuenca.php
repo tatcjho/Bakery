@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="../CSS/sucursales.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+<<<<<<< HEAD
 
+=======
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <script src="../js/sucursales.js"></script>
+    <title>Sucursal CUE</title>
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 </head>
-
 <body>
-
-    <?php
-    include("cabecera.php")
-    ?>
-
+    <div class="cabecera">
+        <?php
+        include("cabecera.php");
+        ?>
+    </div>
     <div class="contenido">
+<<<<<<< HEAD
 
         <!-- <div class="sub">
+=======
+        <div class="sub">
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
             <div class="tit">
                 <h4>Cuenca</h4>
             </div>
             <?php
             include("../archivosSecu/subcabecera.php");
             ?>
+<<<<<<< HEAD
 
         </div> -->
         <?php
@@ -40,13 +50,98 @@
             </div>
         </div>
         <div class="fondo1"></div>
+=======
+        </div>
+    <br>
+    <div>
+        <ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="../images/panederias/8.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-6" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/10.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/3.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/4.jpg" />    
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-5" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/5.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev">&#x2039;</label>
+			<label for="img-6" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+   
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+    </li>
+</ul>
+
+</div>
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 
         <br>
         <br>
 
         <div class="conte">
+<<<<<<< HEAD
             <h1>Acerca de nosotros</h1>
             <br>
+=======
+            <h1>Acerca de Nosotros</h1>
+
+            <div>
+            <p>En CocoLate contamos con personal altamente cualificado que le dará una
+            atención amable y profesional. Somos reconocidos en Cuenca por nuestros deliciosos productos de
+            pastelería y por nuestra variedad de dulces de corpus. Visítenos, estaremos encantados de
+            atenderle.</p>
+            </div>
+           
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
             <br>
 
             <div class="contenedor">
@@ -142,6 +237,7 @@
 
                     }
                 </script>
+<<<<<<< HEAD
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2wESqJq6cIkEb7WMUZswtEoGVtyL4rkM&callback=initMap" async defer></script>
 
 
@@ -152,15 +248,14 @@
             <br>
 
 
+=======
+            </div>
+            <br>
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
             <?php
             include("piepagina.php");
             ?>
-
-
         </div>
-
     </div>
-
 </body>
-
 </html>

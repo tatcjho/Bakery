@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
     <link rel="stylesheet" href="../CSS/index1.css">
+<<<<<<< HEAD
 
 
 
+=======
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 </head>
 
 <body>
@@ -25,9 +30,7 @@
                 <h2>Bakery Lovers</h2>
                 <p>EL PLACER DE COMER AHORA MÁS CERCA DE TI, VISITA NUESTRAS SUCURSALES</p>
                 <br>
-                <div class="click">
-                    <a href="sucuCuenca.php">click AQUÍ</a>
-                </div>
+                <div class="click"><a href="sucuCuenca.php">CLICK AQUÍ</a></div>
             </div>
         </div>
         <div class="fondo1"></div>
@@ -35,12 +38,9 @@
         <div class="salto"></div>
 
         <section class="bienv">
-
             <div class="imagenbienv">
                 <img src="../images/69.jpg" alt="" id="img">
             </div>
-            <!-- hoal -->
-
             <div id="int">
                 <h4>Acerca de Nosotros</h4>
                 <p>
@@ -54,40 +54,31 @@
                     de la vida, grandes y pequeños.
                 </p>
                 <br>
-                <h5> MISION</h5>
+                <h5> Misión</h5>
                 <p>
                     Somos una empresa cuya misión es ofrecer productos de panadería, repostería, cafetería y refrigerios en general de la más alta calidad con un excelente sabor y aun precio accesible.
                     Establecer un liderazgo con la colaboración y creatividad de nuestro talento humano, utilizando las mejores materias primas del mercado para satisfacer a nuestros clientes.
                 </p>
                 <br>
-                <h5>VISION</h5>
+                <h5>Visión</h5>
                 <p>
-
-
                     Ser una empresa líder en el negocio de panadería y repostería reconocida en la zona norte del país. Destacarnos por la calidad y sabor de nuestros productos, atención y servicio al cliente.
                     Utilizando los más altos estándares de calidad y tecnología de vanguardia en nuestros procesos productivos.
 
                 </p>
             </div>
-
-
-
         </section>
-
         <br>
         <hr>
 
         <div class="line">
-            <div class="linea"></div>
             <section class="wap">
-
                 <section class="columna">
                     <h3>PIDA COCOLATE BAKERY A DOMICILIO</h3>
-
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
                         <div class="prueba">
-                            <a href="pan.php">COMPRAR PANES</a>
+                            <a href="panes.php">COMPRAR PANES</a>
                         </div>
                     </div>
 
@@ -109,14 +100,10 @@
                 </section>
             </section>
         </div>
-
-
     </div>
-
     <?php
     include("piepagina.php");
     ?>
-
 </body>
 
 </html>

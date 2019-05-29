@@ -24,12 +24,12 @@
 
             </a>
             <div class="m">
-                <p>MenÃº</p>
+                <p>Menú</p>
             </div>
 
         </div>
         <div class="logo">
-            <p><a href="index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="../index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>
@@ -38,7 +38,7 @@
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="../../pan.php">Panes</a></li>
+                        <li><a href="../panes.php">Panes</a></li>
                         <li><a href="../../cookies.php">Galletas</a></li>
                         <li><a href="../../cake.php">Tortas</a></li>
                         <li> <a href="#">Cupcake</a></li>
@@ -46,15 +46,16 @@
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="../sesiones.html">Iniciar Sesion</a></li>
+                <li class="submenu">
+                    <a href="#"><?php echo $_SESSION['usu_nombres'] ?><span class="fa fa-caret-down"></span></a>
+                    <ul class="children">
+                        <li><a href="editarPerfil.php">Editar Perfil</a></li>
+                        <li><a href="../Conexion/logout.php">Cerrar Sesion</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-
-
     </header>
-
-
-
 </body>
 
 </html>

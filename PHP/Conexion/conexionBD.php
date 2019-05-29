@@ -1,4 +1,4 @@
-<?php          
+﻿<?php          
 $db_servername = "35.198.6.124";     
 $db_username = "root";     
 $db_password = ""; 
@@ -8,8 +8,7 @@ $conn->set_charset("utf8");
 # Probar conexión     
 if ($conn->connect_error) {                             
     die("Connection failed: " . $conn->connect_error);     
-}else{
-                     
-         } 
- 
+}else{   
+    #echo "conexion exitosa";              
+}             
 ?> 

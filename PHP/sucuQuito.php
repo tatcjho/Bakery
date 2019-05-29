@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="../CSS/sucursales.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <script src="../js/sucursales.js"></script>
+
+    <title>Sucursal UIO</title>
 </head>
 
 <body>
@@ -27,6 +31,7 @@
             ?>
 
         </div>
+<<<<<<< HEAD
         <br>
         
         <div class="ancholetras">
@@ -38,12 +43,102 @@
 
         <br>
         <br>
+=======
 
+        <br>
+
+<div>
+
+
+
+
+        <ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="../images/panederias/8.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-6" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/10.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/3.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/4.jpg" />    
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-5" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="../images/panederias/5.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev">&#x2039;</label>
+			<label for="img-6" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+   
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+    </li>
+</ul>
+
+</div>
 
 
         <div class="conte">
+<<<<<<< HEAD
             <h1>Acerca de nosotros</h1>
             <br><br>
+=======
+            <h1>Acerca de Nosotros</h1>
+
+            <div>
+            <p>En CocoLate contamos con personal altamente cualificado que le dará una
+            atención amable y profesional. Somos reconocidos en Quito por nuestros deliciosos productos de
+            pastelería y por nuestra variedad de dulces de corpus. Visítenos, estaremos encantados de
+            atenderle.</p>
+            </div>
+           
+            <br>
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 
             <div class="contenedor">
 
@@ -63,7 +158,7 @@
                         <p><i class="fas fa-phone"></i> <a href="tel:0969415550">0969415550</a></p>
                         <p><i class="fas fa-phone-volume"></i> <a href="tel:+074092675">(07)+4092675</a></p>
                         <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@outlok.com">cocolate@outlok.com</a></p>
-                        <p><i class="fas fa-map-marked-alt"></i> Monteserrin Nayon</p>
+                        <p><i class="fas fa-map-marked-alt"></i> Av.Turuhuayco y Del Obrero</p>
                     </div>
 
                 </div>
@@ -80,6 +175,7 @@
 
 
 
+<<<<<<< HEAD
 
                 <script>
                     // Initialize and add the map
@@ -147,6 +243,15 @@
 
                         }
 
+=======
+                    function fn_ok(rta) {
+                        var lat = rta.coords.latitude;
+                        var lon = rta.coords.longitude;
+                        var tienlat = '-2.884650'
+                        var tienlon = '-78.989460'
+                        console.log(lat, lon);
+                        sucursales(lat, lon, tienlat, tienlon);
+>>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
                     }
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2wESqJq6cIkEb7WMUZswtEoGVtyL4rkM&callback=initMap" async defer></script>
@@ -157,6 +262,14 @@
             <br>
             <br>
             <br>
+            <br>
+
+
+
+
+        
+
+            </div>
             <br>
 
 

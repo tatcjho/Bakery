@@ -64,22 +64,25 @@
     height: auto;
     border: solid  orange;
     margin: auto;
-    padding: 10px 50px;
-
 }
 
 .click a:hover {
     /* border: 3px solid dodgerblue; */
     color: fuchsia;
+    background-color: white;
 }
 
 .click a {
+    width: 100%;
     color: whitesmoke;
-    font-size: 25px;
+    text-align: center;
     text-decoration: none;
-    font-weight: bold;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 25px;
+    display: inline-block;
 }
 
 /* contenido */
@@ -95,7 +98,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .imagenbienv {
@@ -106,16 +109,26 @@
     margin-left: 70px;
     width: 100%;
     height: 350px;
+    margin-top: 14%
 }
 #int {
     width: 58.2%;
-    padding-top: 15px;
-    padding: 15px 50px;
+    padding: 0px 50px;
 }
 
 #int h4 {
     font-size: 35px;
     text-align: center;
+    
+    
+}
+
+#int h5 {
+    font-size: 35px;
+    text-align: left;
+    color: #c02d54;
+    font-family: 'Oswald', sans-serif;
+
     
 }
 
@@ -129,13 +142,12 @@
 .wap {
     width: 90%;
     margin: auto;
-    padding-top: 30px;
 }
-
 
 .contenedor hr{
     width: 70%;
     margin: 0 auto;
+    color:  solid black;
 }
 
 .columna {
@@ -153,9 +165,10 @@
 }
 
 .columnasx3 img {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding-bottom: 10px;
+    padding-left: 45px;
 
 }
 
@@ -189,6 +202,7 @@ h3{
     text-align: center;
     font-weight: bold;
 }
+
 h5{
     font-size: 20px;
     text-align: center;
@@ -248,4 +262,26 @@ h5{
 @font-face {
     font-family: ultra;
     src: url(../fuentes/StintUltraExpanded-Regular.ttf);
+}
+
+table{
+    background-color:whitesmoke !important;
+    border: 1px solid black;
+    border:black 2px solid;
+    font-size: 110%;
+}
+
+th{
+    border: 1px solid black;
+
+}
+
+tr{
+    border: 1px solid black;
+
+}
+
+td{
+    border: 1px solid black;
+
 }

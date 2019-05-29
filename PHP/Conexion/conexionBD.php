@@ -1,15 +1,15 @@
 <?php          
-$db_servername = "35.198.6.124";     
-$db_username = "root";     
-$db_password = ""; 
-$db_name = "pasteleria";                  
+$db_servername = "http://cocolatebakery.orgfree.com";     
+$db_username = "8262";     
+$db_password = "skates95"; 
+$db_name = "8262";                  
 $conn = new mysqli($db_servername, $db_username, $db_password, $db_name);     
 $conn->set_charset("utf8");          
 # Probar conexión     
 if ($conn->connect_error) {                             
     die("Connection failed: " . $conn->connect_error);     
-}else{
-    
-} 
+}else{   
+    echo "conexion exitosa";              
+         } 
  
 ?> 

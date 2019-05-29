@@ -16,81 +16,64 @@
     <div class="cabecera">
         <?php
         include("cabecera.php");
+        $codigo= $_GET['codigo']; 
+        $usuario = $_GET['usuario'];
         ?>
 
     </div>
 
     <div class="contenedor">
-
-
-        <div class="ancholetras">
-            <div class="texto">
-                <h2>Bakery Lovers</h2>
-                <p>EL PLACER DE COMER AHORA MÁS CERCA DE TI, VISITA NUESTRAS SUCURSALES</p>
-                <br>
-                <div class="click">
-                    <a href="sucuCuenca.php">click AQUÍ</a>
-                </div>
+   
+            <div id="izquierda"> 
+                
             </div>
-        </div>
-        <div id="fondo1"></div>
+            <table>     
+                
+            <tr>             
+                <th>Ruc</th>             
+                <th>Nombre Empresa</th>              
+                <th>Dirección</th>             
+                <th>Telefono</th>                         
+                <th>Correo</th>             
+                <th>Eliminar</th>
+                <th>Modificar</th>
+                <th>Cambiar contraseña</th>  
+                <th>Subir Foto</th>
+                <th>Productos</th>
 
-        <div class="salto"></div>
-
-        <section class="bienv">
-
-            <div class="imagenbienv">
-                <img src="../../images/69.jpg" alt="" id="img">
-            </div>
-        <!-- hoal -->
-
-            <div id="int">
-                <h4>Acerca de Nosotros</h4>
-                <p>
-                    CocoLate Bakery es un equipo comprometido de personas talentosas que ofrecen panadería,
-                    pastelería de calidad superior elaborados con la mejor materia prima del mercado. Nuestro
-                    objetivo es proporcionar a todos nuestros clientes un producto y una experiencia sin igual.
-                </p>
-                <p>
-                    Brindamos constantemente un excelente servicio al cliente y creemos que la satisfacción del
-                    cliente es nuestro objetivo final, además estamos aquí para ayudarlo a celebrar los momentos
-                    de la vida, grandes y pequeños.
-                </p>
-            </div>
-
-
-
-        </section>
-
-
-        <div class="line">
-            <div class="linea"></div>
-            <section class="wap">
-
-                <section class="columna">
-                    <h3>PIDA COCOLATE BAKERY A DOMICILIO</h3>
-
-                    <div class="columnasx3">
-                        <img src="../../images/panes/lobster-tail-pastry.jpg" alt="">
-                        <a href="pan.php">COMPRAR PANES</a>
-                    </div>
-
-
-                    <div class="columnasx3">
-                        <img src="../../images/tortas/rainbow-cake2.jpg" alt="">
-                        <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
-
-                    </div>
-                    <div class="columnasx3">
-                        <img src="../../images/galletas/chocolate-chip-cookies.jpg" alt="">
-                        <a href="cookies.php">COMPRAR GALLETAS</a>
-                    </div>
-
-                </section>
-            </section>
-        </div>
+                               
+            </tr> 
+ 
+        <?php             
+        include '../Conexion/conexionBD.php';              
+        $sql = "SELECT * FROM empresa WHERE emp_codigo = '$codigo'";             
+        $result = $conn->query($sql);                         
+        if ($result->num_rows > 0) {                                  
+            while($row = $result->fetch_assoc()) {                                         
+                echo "   <td>" . $row['emp_ruc'] . "</td>";                     
+                echo "   <td>" . $row['emp_nombre'] ."</td>";                     
+                echo "   <td>" . $row['emp_direccion'] . "</td>";                     
+                echo "   <td>" . $row['emp_telefono'] . "</td>"; 
+                echo "   <td>" . $row['emp_correo'] . "</td>";                                                     
+                echo "   <td><a href='Controladores/eliminar.php?codigo=".$row['emp_codigo']."&usuario=".$usuario."'>Enlace Eliminar</a></td>";
+                echo "   <td><a href='Controladores/modificar.php?codigo=".$row['emp_codigo']."&usuario=".$usuario."'>Enlace Modificar</a></td>";
+                echo "   <td><a href='Controladores/cambiar.php?codigo=".$row['emp_codigo']."&usuario=".$usuario."'>Enlace Cambiar</a></td>";
+                echo "   <td><a href='Controladores/productos.php?codigo=".$row['emp_codigo']."'>Productos</a></td>";
+            echo "</tr>";
+        }
+                  
+        } else {                 
+            echo "<tr>";                 
+            echo "   <td colspan='7'> Usuario no existente </td>";                 
+            echo "</tr>"; 
+ 
+            }             
+            $conn->close();                  
+        ?>     
+        </table>     
 
 
+        
     </div>
     
     <?php

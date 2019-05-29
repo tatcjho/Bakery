@@ -30,7 +30,7 @@
 
         </div>
         <div class="logo">
-            <p><a href="index.php"><img src="../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>

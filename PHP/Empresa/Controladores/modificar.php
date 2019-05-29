@@ -10,10 +10,14 @@
         {           
           ?>  
             <head>     
-                <link href="CSS/estilo1.css" rel="stylesheet" />
                 <meta charset="UTF-8"> 
-                <title>Modificar Datos</title>
-                <h1>Modificar Datos</h1>
+                <link rel="stylesheet" href="../../../CSS/crear_usuario.css">
+            </head> 
+            <body>
+        
+            <div class="contenedor">
+            <div class="ancholetras">
+            <div class="texto">
             </head> 
             <form id="formulario02" method="POST" action="modificar2.php">
             <h2 id="logo"> <img src="CSS/sendfast.jpg" alt=""></h2>
@@ -29,10 +33,10 @@
             <br>
             
            
-            <input type='text' name='direccion' value="<?php echo $row['usu_direccion']?>" />
+            <input type='text' name='direccion' value="<?php echo $row['emp_direccion']?>" />
             <br>
            
-            <input type='text' name='telefono' value="<?php echo $row['usu_telefono']?>" />
+            <input type='text' name='telefono' value="<?php echo $row['emp_telefono']?>" />
             <br>
            
            
@@ -55,3 +59,6 @@
     
     $conn->close();  
 ?>
+    </div>  
+    </div>
+    </div>

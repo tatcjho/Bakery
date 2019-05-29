@@ -17,7 +17,7 @@
         $correo = isset($_POST["correo"]) ? trim($_POST["correo"]): null;         
         $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;
         $fecha_Creacion = date('Y/m/d h:i:s', time());                         
-        $sql = "INSERT INTO empresa VALUES (0,'$nombre', '$ruc', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fecha_Creacion', 'N', null)";         
+        $sql = "INSERT INTO empresa VALUES (0,'$nombre', '$ruc', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fecha_Creacion', 'N', null, 'N')";         
  
         if ($conn->query($sql) === TRUE) {             
             echo "<p>Se ha creado los datos de la empresa correctamemte!!!</p>";              

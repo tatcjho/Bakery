@@ -1,5 +1,5 @@
-<?php          
-$db_servername = "localhost";     
+﻿<?php          
+$db_servername = "35.198.6.124";     
 $db_username = "root";     
 $db_password = ""; 
 $db_name = "pasteleria";                  

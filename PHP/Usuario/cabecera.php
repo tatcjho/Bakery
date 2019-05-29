@@ -29,12 +29,12 @@
 
         </div>
         <div class="logo">
-            <p><a href="index.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href=""><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
 
         <nav>
             <ul>
-                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="">Inicio</a></li>
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
@@ -46,7 +46,12 @@
                 </li>
                 <li><a href="#">Pedidos</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="../sesiones.html">Iniciar Sesion</a></li>
+                <li class="submenu">
+                    <a href="#"><?php echo $_SESSION['usu_nombres'] ?><span class="fa fa-caret-down"></span></a>
+                    <ul class="children">
+                        <li><a href="../Conexion/logout.php">Cerrar Sesion</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 

@@ -10,23 +10,16 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
-
-
     <script src="../js/sucursales.js"></script>
-
-
     <title>Sucursal CUE</title>
-
 </head>
-
 <body>
-
-    <?php
-    include("cabecera.php")
-    ?>
-
+    <div class="cabecera">
+        <?php
+        include("cabecera.php");
+        ?>
+    </div>
     <div class="contenido">
-
         <div class="sub">
             <div class="tit">
                 <h4>Cuenca</h4>
@@ -34,16 +27,9 @@
             <?php
             include("../archivosSecu/subcabecera.php");
             ?>
-
         </div>
-
     <br>
-
     <div>
-
-
-
-
         <ul class="slides">
     <input type="radio" name="radio-btn" id="img-1" checked />
     <li class="slide-container">
@@ -174,22 +160,12 @@
                         sucursales(lat, lon, tienlat, tienlon);
                     }
                 </script>
-
-
             </div>
             <br>
-
-
-
             <?php
             include("piepagina.php");
             ?>
-
-
         </div>
-
     </div>
-
 </body>
-
 </html>

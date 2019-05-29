@@ -12,7 +12,6 @@ body {
  
 .menu_bar {
     display:none;
-   
 }
 header {
     width: 100%;
@@ -27,7 +26,6 @@ header {
     float: left;
 
 }
- 
 header nav {
     width:80%;
     height: 70px;
@@ -35,20 +33,15 @@ header nav {
     display: flex;
     padding-top:10px;
     z-index:1000;
-    margin-left: 650px;
-
-    
+    margin-left: 650px;    
 }
 header nav ul {
     list-style:none;
-   
 }
  
 header nav ul li {
 	display:inline-block;
     position: relative;
-
-   
 }
 header nav ul li:hover {
 	background:rgba(240, 0, 220);
@@ -63,6 +56,7 @@ header nav ul li a {
 }
 header nav ul li:hover .children{
 	display:block;
+    background-color: fuchsia;
 }
 header nav ul li .children {
 	display: none;
@@ -83,6 +77,10 @@ header nav ul li .children li a {
 nav ul li ul li a{
     color: white;
     background-color: #333333;
+}
+nav ul li ul li a:hover{
+    color: white;
+    background-color: #2098D1;
 }
 header nav ul li a span {
 	position: relative;
@@ -129,10 +127,7 @@ header nav ul li a span {
 		font-size: 25px;
 		font-weight: bold;
         text-decoration: none;
-
         float: left;
-
-
     }
     .menu_bar img {
 		float: left;
@@ -170,8 +165,6 @@ header nav ul li a span {
     header nav ul li .children li a {
 		margin-left:20px;
     }
-    
-	
 }
 @font-face{
     font-family: rale;

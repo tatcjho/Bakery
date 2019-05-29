@@ -28,7 +28,8 @@
                 
             </div>
             <table>     
-                
+            </br>
+            
             <tr>             
                 <th>Ruc</th>             
                 <th>Nombre Empresa</th>              
@@ -38,7 +39,6 @@
                 <th>Eliminar</th>
                 <th>Modificar</th>
                 <th>Cambiar contraseña</th>  
-                <th>Subir Foto</th>
                 <th>Productos</th>
 
                                
@@ -71,10 +71,11 @@
             $conn->close();                  
         ?>     
         </table>     
-
-
-        
+    </br>
+    </br>
+    
     </div>
+    
     
     <?php
     include("piepagina.php");

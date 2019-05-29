@@ -33,7 +33,7 @@
         }                  
         //cerrar la base de datos         
         $conn->close();         
-        echo "<a href='../crear_usuario.php'>Regresar</a>";                   
+        echo "<a href='../../login.php'>Regresar</a>";                   
     ?> 
  
 </body> 

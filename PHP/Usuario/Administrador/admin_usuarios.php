@@ -2,16 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Gestión de usuarios</title>
-    <link rel="stylesheet" type="text/css" href="../../CSS/admin.css">
+    <link rel="stylesheet" type="text/css" href="../../../sCSS/admin.css">
 </head>
 <body>
      <div class="cabecera">
         <?php
         include("cabecera.php");
-        $codigo= $_GET['codigo']; 
-        $usuario = $_GET['usuario'];
         ?>
-        <br>
     </div>
     <div id="tituloIndex">
         <h1>Listado de Usuarios</h1>
@@ -29,8 +26,8 @@
             <th>Cambiar Contraseña</th>
         </tr>
         <?php
-        include '../Conexion/conexionBD.php';
-        $sql = "SELECT * FROM usuario WHERE usu_eliminado!='S' and usu_rol!='A'";
+        include '../../Conexion/conexionBD.php';
+        $sql = "SELECT * FROM usuario WHERE usu_eliminado!='Y' and usu_rol!='Administrador'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
@@ -41,10 +38,9 @@
                     echo " <td>" . $row['usu_telefono'] . "</td>";
                     echo " <td>" . $row['usu_correo'] . "</td>";
                     echo " <td>" . $row['usu_fecha_nacimiento'] . "</td>";
-                echo "   <td><a href='Controladores/eliminar.php?codigo=".$row['usu_codigo']."&usuario=".$usuario."'>Enlace Eliminar</a></td>";
-                echo "   <td><a href='Controladores/modificar.php?codigo=".$row['usu_codigo']."&usuario=".$usuario."'>Enlace Modificar</a></td>";
-                echo "   <td><a href='Controladores/cambiar.php?codigo=".$row['usu_codigo']."&usuario=".$usuario."'>Enlace Cambiar</a></td>";
-
+                    echo " <td><a href='../Controladores/eliminar_usuario.php?codigo=".$row['usu_codigo']."'>Eliminar</a></td>";
+                    echo " <td><a href='../Controladores/modificar_usuario.php?codigo=".$row['usu_codigo']."'>Modificar</a> </td>";
+                    echo " <td><a href='../Controladores/cambiar_contrasena_usuario.php?codigo=".$row['usu_codigo']."'>Cambiar contraseña</a> </td>";
                 echo "</tr>";
             }
         } else {

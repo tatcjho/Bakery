@@ -30,7 +30,7 @@
         {                   
             session_start(); 
             $_SESSION['isLogged']  = TRUE;         
-            header("Location: ../Usuario/index_administrador.php?codigo=". $row['usu_codigo'] . '&usuario='.$row['usu_correo'].""); 
+            header("Location: ../Administrador/admin_usuarios.php?codigo=". $row['usu_codigo'] . '&usuario='.$row['usu_correo'].""); 
             
             exit();    
         }

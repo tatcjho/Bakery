@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,6 +41,9 @@
                         <li><a href="../panes.php">Panes</a></li>
                         <li><a href="../../cookies.php">Galletas</a></li>
                         <li><a href="../../cake.php">Tortas</a></li>
+                        <li><a href="../pan.php">Panes</a></li>
+                        <li><a href="../cookies.php">Galletas</a></li>
+                        <li><a href="../cake.php">Tortas</a></li>
                         <li> <a href="#">Cupcake</a></li>
                     </ul>
                 </li>

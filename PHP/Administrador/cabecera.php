@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +30,7 @@
         <nav>
             <ul>
                 <li><a href="index_administrador.php">Inicio</a></li>
+
                 <li><a href="#">Usuarios</a></li>
                 <li><a href="#">Pedidos</a></li>
                 <li class="submenu">

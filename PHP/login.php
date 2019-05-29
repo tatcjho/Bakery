@@ -19,7 +19,7 @@
     <div class="contenedor">
         <div class="ancholetras">
             <div class="texto">
-                <form action="Controladores/login_usuario.php" method="POST">
+                <form action="Usuario/Controladores/login_usuario.php" method="POST">
                     <h2>Login</h2>
                     <input id="correo" type="email" name="correo" placeholder="Correo"  required>
                     <input id="contrasena" type="password" name="contrasena" placeholder="Contrasena"  required>

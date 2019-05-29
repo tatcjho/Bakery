@@ -1,4 +1,3 @@
-﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,29 +11,25 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <header>
 
         <div class="menu_bar">
-            <a href="#" class="bt-menu"><img src="https://img.icons8.com/nolan/64/000000/menu.png">
-            </a>
+            <a href="#" class="bt-menu"><img src="https://img.icons8.com/nolan/64/000000/menu.png"></a>
             <div class="m">
-                <p>Menú</p>
+                <p>Men�</p>
             </div>
         </div>
         <div class="logo">
-            <p><a href="index_administrador.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
+            <p><a href="index_empresa.php"><img src="../../images/logo/oe1.png" alt="logo" id="logoP" /></a></p>
         </div>
-
         <nav>
             <ul>
-                <li><a href="index_administrador.php">Inicio</a></li>
-
+                <li><a href="index_empresa.php">Inicio</a></li>
                 <li><a href="#">Usuarios</a></li>
-                <li><a href="#">Pedidos</a></li>
+                <li><a href="agregar_producto.php"s>Pedidos</a></li>
                 <li class="submenu">
-                    <a href="#">Stalin Figueroa<span class="fa fa-caret-down"></span></a>
+                    <a href="#"><?php echo $_SESSION['usu_nombres'] ?><span class="fa fa-caret-down"></span></a>
                     <ul class="children">
                         <li><a href="../Conexion/logout.php">Cerrar Sesion</a></li>
                     </ul>

@@ -25,7 +25,7 @@
             <h1>Listado de Usuarios</h1>
         </div>
         <div id="buscador"> 
-            <h4>Busqueda de correo</h4>
+            <h4>Busqueda de usuarios</h4>
             <input type="text" name="busqueda" id="busqueda" placeholder="Buscar.."/>
         </div>        
         <section id="datos"></section>       

@@ -23,7 +23,7 @@
         $nombre=isset($_POST["nombre"]) ? mb_strtoupper(trim($_POST["nombre"]), 'UTF-8'):null;
         $precio=isset($_POST["precio"]) ? trim($_POST["precio"]):null;
         $stock=isset($_POST["stock"]) ? trim($_POST["stock"]):null;
-        $categoria=isset($_POST["categoria1"]) ? mb_strtoupper(trim($_POST["categoria1"]), 'UTF-8'):null;
+        $categoria=isset($_POST["categoria"]) ? trim($_POST["categoria"]):null;
                                              
         date_default_timezone_set("America/Guayaquil");
         $fecha = date('Y-m-d H:i:s', time());

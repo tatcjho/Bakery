@@ -15,7 +15,7 @@
     <div class="cabecera">
         <?php
         include("cabecera.php");
-        $codigo=$_GET['codigo'];
+        //$codigo=$_GET['codigo'];
         ?>
     </div>
 

@@ -35,7 +35,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
 
 
     if (isset($_FILES['img'])) {
-        echo('hola');
+
         $img_nombre = $_FILES['img']['name'];
         $img_tmp = $_FILES['img']['tmp_name'];
         $img_ruta = "../../../images/usuario/" . $img_nombre;

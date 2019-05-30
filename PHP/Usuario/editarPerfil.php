@@ -49,7 +49,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     ?>
-                    <form id="formulario01" method="post" action="Controladores/modificarUsuario.php">
+                    <form id="formulario01" method="post" action="Controladores/modificarUsuario.php" enctype="multipart/form-data">
 
                         <div class="foto">
                             <img src="../../images/usuario/<?php echo ($row["usu_imagen"]) ?>" alt="">

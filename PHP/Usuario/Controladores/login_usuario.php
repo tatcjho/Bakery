@@ -15,9 +15,11 @@
         $_SESSION['usu_nombres']= $row['usu_nombreApellido'];
         $_SESSION['usu_correo']= $row['usu_correo'];
         $_SESSION['usu_imagen']= $row['usu_imagen'];
+
         if ($row['usu_rol'] == "U"){
             
             header("Location: ../../index.php");
+           
             exit();  
         }else{
             header("Location: ../../Administrador/index_administrador.php");

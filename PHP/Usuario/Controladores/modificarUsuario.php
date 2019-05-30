@@ -8,18 +8,12 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Modificar perfil</title>
 </head>
-
 <body>
-
     <?php
-
-
-
     include '../../Conexion/conexionBD.php';
     $codigo = $_POST["codigo"];
     $cedula = isset($_POST["cedula"]) ? trim($_POST["cedula"]) : null;
@@ -29,19 +23,15 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
     $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]) : null;
     $correo = isset($_POST["correo"]) ? trim($_POST["correo"]) : null;
     $correo = isset($_POST["correo"]) ? trim($_POST["correo"]) : null;
-
+    
     date_default_timezone_set("America/Guayaquil");
     $fecha = date('Y-m-d H:i:s', time());
-
-
+    
     if (isset($_FILES['img'])) {
-        echo('hola');
         $img_nombre = $_FILES['img']['name'];
         $img_tmp = $_FILES['img']['tmp_name'];
         $img_ruta = "../../../images/usuario/" . $img_nombre;
-
         if (copy($img_tmp, $img_ruta)) {
-            echo('hola');
             $sql = "UPDATE usuario " .
                 "SET usu_cedula='$cedula'," .
                 "usu_nombreApellido='$nombres'," .
@@ -60,7 +50,6 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
             }
             
         }
-        echo($img_nombre);
     }
     $conn->close();
     ?>

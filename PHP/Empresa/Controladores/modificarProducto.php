@@ -36,7 +36,8 @@
         "WHERE produ_codigo=$codigo";                                   
         if ($conn->query($sql) === TRUE) {
             echo "Producto modificado correctamente";
-            header('Refresh: 2; URL=../index_empresa.php');
+            header("Refresh: 2; URL=../modificarProducto.php?codigo=$codigo");
+            
         }else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
         }

@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../../CSS/index1.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="cabecera">
         <?php

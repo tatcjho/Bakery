@@ -21,6 +21,9 @@
     $fecha_Creacion = date('Y/m/d h:i:s', time());  
     if(isset($_FILES['img'])){
         $img_nombre=$_FILES['img']['name'];
+        $img_tmp=$_FILES['img']['tmp_name'];
+        $img_ruta="../../../images/usuario/".$img_nombre;
+        if(copy($img_tmp,$img_ruta)){
         $sql = "INSERT INTO usuario VALUES (0, 'U', '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento','$img_nombre' , 'N', 'N', '$fecha_Creacion', null)";
         if ($conn->query($sql) === TRUE) {
             echo "Usuario Creado";
@@ -33,6 +36,7 @@
                 echo "<h5 class='error'>Error: " . mysqli_error($conn) . "</h5>";
                 header('Refresh: 1; URL=../crear_usuario.php');
             }
+        }
         }
     }
 ?>

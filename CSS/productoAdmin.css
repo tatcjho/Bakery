@@ -89,7 +89,7 @@
     width: 90%;
     height: 200px;
     padding-bottom: 10px;
-    padding-left: 11%;
+    padding-left: 10.5%;
 
 }
 .col-3 a{
@@ -112,6 +112,10 @@
     padding: 10px;
     text-decoration: none;
     background-color: black;
+}
+
+.col-3 .btn-primary:hover{
+    background-color: firebrick;
 }
 
 .col-3 .card-body{

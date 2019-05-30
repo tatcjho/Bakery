@@ -38,7 +38,7 @@
             </div>
             <div class="hiper">
                 <a href="panes.php">Panes</a>
-                <a href="cake.php">Tortas & Cupcakes</a>
+                <a href="cake.php">Tortas &amp; Cupcakes</a>
                 <a href="cookies.php">Galletas</a>
                 <a href="#Favoritos">Favoritos</a>
             </div>
@@ -59,8 +59,8 @@
                                 echo "<div class='card-body'>";
                                     echo "<h5 class='card-title'>$".$row['produ_precio']."</h5>";
                                     echo "<p class='card-text'>".$row['produ_nombre']."</p>";
-                                    echo "<button class='btn-primary' name='modificar' type='submit' >Modificar Producto</button>";
-                                    echo "<button class='btn-primary' name='eliminar' type='submit' >Eliminar Producto</button>";
+                                    echo "<a href='modificarProducto.php?codigo=".$row['produ_codigo']."'><div class='btn-primary'>Modificar</div></a>";
+                                    echo "<a href='eliminar_usuario.php?codigo=".$row['produ_codigo']."'><div class='btn-primary'>Eliminar</div></a>";
                                 echo "</div>";
                             echo "</div>";
                         echo "</div>";

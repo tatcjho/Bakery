@@ -103,10 +103,17 @@
     <div class="conte">
         <h1>Acerca de nosotros</h1>
         <div>
-            <p>En CocoLate contamos con personal altamente cualificado que le dará una
-                atención amable y profesional. Somos reconocidos en Quito por nuestros deliciosos productos de
-                pastelería y por nuestra variedad de dulces de corpus. Visítenos, estaremos encantados de
-                atenderle.</p>
+        <p><b>Cocolate </b> cuenta con personal altamenta capacitado para que vivas una experiencia única de principio 
+                  a fin, estamos comprometidos en brindarte el mejor servicio ademas de ofrecerle productos del dia y 
+                  de la más alta calidad. Nuestros ingredientes frescos y listos para darte una experiencia de sabor unica
+                  cuentan con estandares de calidad que certifican la pureza y frescura de nuestros ingredientes asi 
+                  como de nuestros productos.</p>
+
+                  <p>Ven y visitanos en nuestro nuevo y renovado local, estamos ubicados en la <b>Av. Isabel La Católica N. 23-10 y Madrid
+                  </b> a 50 mts de la  <b>Universidad Politecnica Salesiana</b>, aqui podras encontrar
+                   una gran variedad de panes, galletas y nuestras exquisitas tortas. Ademas si eres amante de los bocadillos
+                   y cupcakes aqui los encontraras, tenemos disponibles más de cien deliciosas opciones para satisfacerte. Ven y vive 
+                   la experiencia <b>Cocolate. </b> </p>
         </div>
         <br>
         <div class="contenedor">
@@ -117,8 +124,8 @@
                 <div class="horario">
                     <h2>Horario de Antencion</h2>
                     <br>
-                    <p> Lunes a Viernes de 7:00 am a 6:00 pm </p>
-                    <p> Sabado y Domingo de 9:00 am a 5:00 pm</p>
+                    <p> Lunes a Viernes de 7:00 am a 18:00 pm </p>
+                    <p> Sabado y Domingo de 9:00 am a 17:00 pm</p>
                 </div>
 
                 <div class="datos">
@@ -126,8 +133,8 @@
                     <br>
                     <p><i class="fas fa-phone"></i> <a href="tel:0969415550">0969415550</a></p>
                     <p><i class="fas fa-phone-volume"></i> <a href="tel:+074092675">(07)+4092675</a></p>
-                    <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@outlok.com">cocolate@outlok.com</a></p>
-                    <p><i class="fas fa-map-marked-alt"></i> Av.Turuhuayco y Del Obrero</p>
+                    <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@outlok.com">cocolate@outlook.com</a></p>
+                    <p><i class="fas fa-map-marked-alt"></i> Av. Isabel La Católica N. 23-10 y Madrid</p>
                 </div>
 
             </div>

@@ -54,7 +54,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
                         <div class="foto">
                             <img src="../../images/usuario/<?php echo ($row["usu_imagen"]) ?>" alt="">
 
-                            <input type="file" id="img" name="img" />
+                            <input type="file" id="img" name="img"/>
                         </div>
 
                         <br>

@@ -22,6 +22,7 @@
         $telefono=isset($_POST["telefono"]) ? trim($_POST["telefono"]):null;
         $fechaNacimiento=isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]):null;
         $correo=isset($_POST["correo"]) ? trim($_POST["correo"]):null;
+        $correo=isset($_POST["correo"]) ? trim($_POST["correo"]):null;
                                              
         date_default_timezone_set("America/Guayaquil");
         $fecha = date('Y-m-d H:i:s', time());

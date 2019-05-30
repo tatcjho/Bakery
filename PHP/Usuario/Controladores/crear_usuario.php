@@ -19,6 +19,7 @@
     $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null;                 
     $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;     
     $fecha_Creacion = date('Y/m/d h:i:s', time());  
+    
     if(isset($_FILES['img'])){
         $img_nombre=$_FILES['img']['name'];
         $img_tmp=$_FILES['img']['tmp_name'];

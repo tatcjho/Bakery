@@ -1,0 +1,30 @@
+ #formulario01{
+    width: 100%;
+    display: grid; 
+}
+.foto{
+
+    grid-column: 2/3;
+    grid-row: 1/19;
+
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    padding-top:  100px;
+    
+}
+.foto img{
+    width: 200px;
+    height: 200px;
+
+
+}
+.foto input{
+    width: 120px;
+    margin-left: 40px;
+    padding-top: 10px;
+
+} 
+#cancelar{
+    width: 40%;
+}

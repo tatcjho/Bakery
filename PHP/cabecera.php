@@ -31,14 +31,18 @@
                 <li class="submenu">
                     <a href="#"> <i class="fab fa-product-hunt"></i> Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-                        <li><a href="panes.php">Panes</a></li>
-                        <li><a href="cookies.php">Galletas</a></li>
-                        <li><a href="cake.php">Tortas</a></li>
+                    <?php
+                    session_start();
+                        echo "<li><a href='panes.php?usu_codigo=".$_SESSION['usu_codigo']."'>Panes</a></li>";
+                        echo "<li><a href='cookies.php?usu_codigo=".$_SESSION['usu_codigo']."'>Galletas</a></li>";
+                        echo "<li><a href='cake.php?usu_codigo=".$_SESSION['usu_codigo']."'>Tortas</a></li>";
+                    
+                    ?>
                     </ul>
                 </li>
                 <li><a href="sucuCuenca.php"> <i class="fas fa-id-card"></i> Contactos</a></li>
                 <?php
-                    session_start();
+                    
                     if(isset($_SESSION['isLogged'])){
                         echo "<li class='submenu'>";
                             echo "<a href='#'><i class='fas fa-user-friends'></i> ".$_SESSION['usu_nombres']."<span class='fa fa-caret-down'></span></a>";

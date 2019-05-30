@@ -15,7 +15,6 @@
 
 <body>
     <header>
-
         <div class="menu_bar">
             <a href="#" class="bt-menu"><img src="https://img.icons8.com/nolan/64/000000/menu.png"></a>
             <div class="m">
@@ -36,7 +35,6 @@
                         echo "<li><a href='panes.php?usu_codigo=".$_SESSION['usu_codigo']."'>Panes</a></li>";
                         echo "<li><a href='cookies.php?usu_codigo=".$_SESSION['usu_codigo']."'>Galletas</a></li>";
                         echo "<li><a href='cake.php?usu_codigo=".$_SESSION['usu_codigo']."'>Tortas</a></li>";
-                    
                     ?>
                     </ul>
                 </li>

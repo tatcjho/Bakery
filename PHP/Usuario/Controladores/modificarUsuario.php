@@ -47,8 +47,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
                 header('Refresh: 2; URL=../../index.php');
             } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
-            }
-            
+            }    
         }
     }
     $conn->close();

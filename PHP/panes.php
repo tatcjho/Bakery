@@ -16,7 +16,7 @@
 
 <body>
 
-<?php
+    <?php
     include("cabecera.php");
     ?>
     <br>
@@ -35,36 +35,37 @@
                 <a href="#Favoritos">Favoritos</a>
             </div>
         </div>
-    <br>
-    <br>
+        <br>
+        <br>
         <div class="container">
-        <?php
-        
+            <?php
+
             include 'Conexion/conexionBD.php';
             $sql = "SELECT * FROM producto WHERE cat_id=1";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
+                while ($row = $result->fetch_assoc()) {
                     echo "<div class='row'>";
-                        echo "<div class='col-3'>";
-                            echo "<div class='card'>";
-                                echo "<img class='card-img-top' src='../images/panes/".$row['produ_imagen']."' alt=''>";
-                                echo "<div class='card-body'>";
-                                    echo "<h5 class='card-title'>$".$row['produ_precio']."</h5>";
-                                    echo "<p class='card-text'>".$row['produ_nombre']."</p>";
-                                    echo "<a href='Controladores/AgregarCarro.php?producto=".$row['produ_codigo']."&precio=".$row['produ_precio']."'><div class='btn-primary'>Agregar al carrito</div></a>";
-        
-                                echo "</div>";
-                            echo "</div>";
-                        echo "</div>";
+                    echo "<div class='col-3'>";
+                    echo "<div class='card'>";
+                    echo "<img class='card-img-top' src='../images/panes/" . $row['produ_imagen'] . "' alt=''>";
+                    echo "<div class='card-body'>";
+                    echo "<h5 class='card-title'>$" . $row['produ_precio'] . "</h5>";
+                    echo "<p class='card-text'>" . $row['produ_nombre'] . "</p>";
+                    echo "<a href='Controladores/AgregarCarro.php?producto=" . $row['produ_codigo'] . "&precio=" . $row['produ_precio'] . "'><div class='btn-primary'>Agregar al carrito</div></a>";
+
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</div>";
                     echo "</div>";
                 }
-            }else {
+            } else {
                 echo "No existen productos registrados";
             }
-        $conn->close();
-        ?>  
+            $conn->close();
+            ?>
         </div>
     </div>
 </body>
+
 </html>

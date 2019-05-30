@@ -20,24 +20,7 @@ header {
     position: fixed;
     z-index:10;
 }
-.imag{
-    width: 20%;
-    height: 70px;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-
-}
-.imag img{
-    width: 100%;
-    height: 70px;
-    margin-right: 5px;
-    background: cyan;
-    
-    
-}
 .logo {
     width: 20%;
     height: 70px;

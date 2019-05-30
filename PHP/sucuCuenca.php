@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="../CSS/sucursales.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
-<<<<<<< HEAD
-
-=======
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <script src="../js/sucursales.js"></script>
     <title>Sucursal CUE</title>
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 </head>
 <body>
     <div class="cabecera">
@@ -23,34 +19,21 @@
         include("cabecera.php");
         ?>
     </div>
-    <div class="contenido">
-<<<<<<< HEAD
-
-        <!-- <div class="sub">
-=======
-        <div class="sub">
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
-            <div class="tit">
-                <h4>Cuenca</h4>
-            </div>
+    <div id="subcabecera">
+        <div id="contSubcabecera">
             <?php
             include("../archivosSecu/subcabecera.php");
             ?>
-<<<<<<< HEAD
-
-        </div> -->
-        <?php
-        include("../archivosSecu/subcabecera.php");
-        ?>
+        </div>
+    </div>           
+    <div class="contenido">
         <br>
-
         <div class="ancholetras">
             <div class="texto">
                 <p>COCOLATE CUENCA</p>
             </div>
         </div>
         <div class="fondo1"></div>
-=======
         </div>
     <br>
     <div>
@@ -121,18 +104,12 @@
     </li>
 </ul>
 
-</div>
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
-
+    </div>
         <br>
         <br>
 
         <div class="conte">
-<<<<<<< HEAD
             <h1>Acerca de nosotros</h1>
-            <br>
-=======
-            <h1>Acerca de Nosotros</h1>
 
             <div>
             <p>En CocoLate contamos con personal altamente cualificado que le dará una
@@ -140,8 +117,7 @@
             pastelería y por nuestra variedad de dulces de corpus. Visítenos, estaremos encantados de
             atenderle.</p>
             </div>
-           
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
+
             <br>
 
             <div class="contenedor">
@@ -161,7 +137,7 @@
                         <br>
                         <p><i class="fas fa-phone"></i> <a href="tel:0969415550">0969415550</a></p>
                         <p><i class="fas fa-phone-volume"></i> <a href="tel:+074092675">(07)+4092675</a></p>
-                        <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@outlok.com">cocolate@outlok.com</a></p>
+                        <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@hotmail.com">cocolate@hotmail.com</a></p>
                         <p><i class="fas fa-map-marked-alt"></i> Av.Turuhuayco y Del Obrero</p>
                     </div>
 
@@ -231,31 +207,17 @@
                                     window.alert('Directions request failed due to ' + status);
                                 }
                             });
-
-
                         }
-
                     }
                 </script>
-<<<<<<< HEAD
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2wESqJq6cIkEb7WMUZswtEoGVtyL4rkM&callback=initMap" async defer></script>
-
-
             </div>
             <br>
             <br>
-            <br>
-            <br>
-
-
-=======
             </div>
             <br>
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
             <?php
             include("piepagina.php");
             ?>
-        </div>
-    </div>
 </body>
 </html>

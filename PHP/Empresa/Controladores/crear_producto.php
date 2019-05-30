@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
+        header("Location: ../login.php");
+    }else if(!isset($_SESSION['emp_nombre'])){
+        if($_SESSION['usu_rol'] == "U"){
+            header("Location: ../index.php");
+        }if($_SESSION['usu_rol'] == "A"){
+            header("Location: ../Administrador/index_administrador.php");
+        }
+    }
+?>
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -19,7 +31,7 @@
         $img_nombre=$_FILES['img']['name'];
         $sql = "INSERT INTO producto VALUES (0, '$nombre', '$precio', '$stock', '$img_nombre', 'N', '$categoria', 1)";
         if ($conn->query($sql) === TRUE) {
-            echo "<p>Producto Creado</p>";
+            echo "Producto Creado";
             header('Refresh: 1; URL=../agregar_producto.php');
         }else{
             if($conn->errno == 1062){

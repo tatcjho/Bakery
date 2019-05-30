@@ -1,42 +1,9 @@
-#navIzq{
+#derecha{
     padding-top: 70px;
 }
-#navIzq ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-#navIzq li a {
-    display: block;
-    color: #000;
-    padding: 15px 16px;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-#navIzq li a.active {
-    background-color: #2098D1;
-    color: white;
-}
-#navIzq li a.eliminar {
-    background-color: #E04A4A;
-    color: white;
-}
-#navIzq li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-#derecha{
-    margin-left: 21%;
-    padding-top: 0.5%;
-}
 #contenedor{
-    margin-left: 34%;
-    width: 500px;
+    margin-left: 35%;
+    width: 600px;
 }
 #titulo{
     display: block;
@@ -199,7 +166,46 @@
 }
 
 #ruc{
-   font-family: sans-serif;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 0 7px 0 20px;
+    background-color: #CFCFCF;
+    border: 1px solid #D9D9D9;
+    outline: none;
+    margin-left: 5%; 
+}
+#precio{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 0 7px 0 20px;
+    background-color: #CFCFCF;
+    border: 1px solid #D9D9D9;
+    outline: none;
+    margin-left: 5%; 
+}
+#stock{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 0 7px 0 20px;
+    background-color: #CFCFCF;
+    border: 1px solid #D9D9D9;
+    outline: none;
+    margin-left: 5%; 
+}
+#categoria{
+    font-family: sans-serif;
     font-size: 16px;
     color: #333333;
     display: block;

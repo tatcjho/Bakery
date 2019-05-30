@@ -26,9 +26,10 @@
             <div class="texto">
                 <h2>Bakery Lovers</h2>
                 <p>EL PLACER DE COMER AHORA MÁS CERCA DE TI, VISITA NUESTRAS SUCURSALES</p>
+                <p>ADMINISTRADOR</p>
             </div>
         </div>
-        <div id="fondo1"></div>
+        <div class="fondo1"></div>
     </div>
 </body>
 </html>

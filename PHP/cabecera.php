@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="../CSS/index.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js"></script>
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-=======
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -35,39 +31,27 @@
                 <li class="submenu">
                     <a href="#"> <i class="fab fa-product-hunt"></i> Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
-<<<<<<< HEAD
-                        <li><a href="../PHP/pan.php"> Panes</a></li>
-=======
                         <li><a href="panes.php">Panes</a></li>
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
-                        <li><a href="../PHP/cookies.php">Galletas</a></li>
-                        <li><a href="../PHP/cake.php">Tortas</a></li>
+                        <li><a href="cookies.php">Galletas</a></li>
+                        <li><a href="cake.php">Tortas</a></li>
                     </ul>
                 </li>
-<<<<<<< HEAD
-                
                 <li><a href="sucuCuenca.php"> <i class="fas fa-id-card"></i> Contactos</a></li>
-                <li><a href="sesiones.html"> <i class="fas fa-user-friends"></i> Iniciar Sesion</a></li>
-                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
-=======
-                <li><a href="#">Contactos</a></li>
                 <?php
                     session_start();
                     if(isset($_SESSION['isLogged'])){
                         echo "<li class='submenu'>";
-                            echo "<a href=''>".$_SESSION['usu_nombres']."<span class='fa fa-caret-down'></span></a>";
+                            echo "<a href='#'><i class='fas fa-user-friends'></i> ".$_SESSION['usu_nombres']."<span class='fa fa-caret-down'></span></a>";
                             echo "<ul class='children'>";
-                                echo "<li><a href='Usuario/editarPerfil.php'>Editar Perfil</a></li>";
-                                echo "<li><a href='Conexion/logout.php'>Cerrar Sesion</a></li>";
+                            echo "<li><a href='Usuario/editarPerfil.php'>Editar Perfil</a></li>";
+                            echo "<li><a href='Conexion/logout.php'>Cerrar Sesion</a></li>";
                             echo "</ul>";
-                        echo"</li>";
+                        echo "</li>";
                     }else{
-                        echo "<li><a href='login.php'>Iniciar Sesion</a></li>";        
+                        echo "<li><a href='login.php'> <i class='fas fa-user-friends'></i> Iniciar Sesion</a></li>";        
                     }
                 ?>
-                <li><a href="#">Carrito(0)</a></li>
-
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
+                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
             </ul>
         </nav>
     </header>

@@ -2,10 +2,16 @@
     session_start();
     if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
         header("Location: ../login.php");
+    }else if(!isset($_SESSION['emp_nombre'])){
+        if($_SESSION['usu_rol'] == "U"){
+            header("Location: ../index.php");
+        }if($_SESSION['usu_rol'] == "A"){
+            header("Location: ../Administrador/index_administrador.php");
+        }
     }
 ?>
 <!DOCTYPE html> 
-<html> 
+<html>
     <head>     
         <meta charset="UTF-8"> 
         <title>Registrarse</title>

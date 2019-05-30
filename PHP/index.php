@@ -8,13 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
     <link rel="stylesheet" href="../CSS/index1.css">
-<<<<<<< HEAD
-
-
-
-=======
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 </head>
 
 <body>

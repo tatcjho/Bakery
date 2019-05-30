@@ -29,10 +29,11 @@ header {
 header nav {
     width:80%;
     height: 70px;
+    margin:0px auto;
     display: flex;
     padding-top:10px;
     z-index:1000;
-    margin-left: 550px;  
+    margin-left: 650px;    
 }
 header nav ul {
     list-style:none;
@@ -54,13 +55,8 @@ header nav ul li a {
     
 }
 header nav ul li:hover .children{
-<<<<<<< HEAD
-    display:block;
-    z-index:1000;
-=======
 	display:block;
     background-color: fuchsia;
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
 }
 header nav ul li .children {
 	display: none;
@@ -92,6 +88,7 @@ header nav ul li a span {
 	margin-right:0;
 	margin-left:10px;
 }
+
 @media screen and (max-width: 420px) {
     
     .logo {
@@ -172,27 +169,5 @@ header nav ul li a span {
 @font-face{
     font-family: rale;
     src: url(../fuentes/Raleway-Regular.ttf)
-}
-
-table{
-    background-color:whitesmoke !important;
-    border: 1px solid black;
-    border:black 2px solid;
-    font-size: 110%;
-}
-
-th{
-    border: 1px solid black;
-
-}
-
-tr{
-    border: 1px solid black;
-
-}
-
-td{
-    border: 1px solid black;
-
 }
  

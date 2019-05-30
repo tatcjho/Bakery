@@ -16,48 +16,32 @@
 
 <body>
 
-    <?php
-    include("cabecera.php")
-    ?>
-
-    <div class="contenido">
-
-        <div class="sub">
-           
+    <div class="cabecera">
+        <?php
+        include("cabecera.php");
+        ?>
+    </div>
+    <div id="subcabecera">
+        <div id="contSubcabecera">
             <?php
             include("../archivosSecu/subcabecera.php");
             ?>
-
         </div>
-
+    </div> 
+    <div class="contenido">
         <br>
-<<<<<<< HEAD
-        
         <div class="ancholetras">
             <div class="texto">
                 <p>COCOLATE GUAYAQUIL</p>
             </div>
         </div>
         <div class="fondo1"></div>
-
+    </div>
+    <div>
         <br>
-        <br>
-
-
-
-        <div class="conte">
-            <h1>Acerca de nosotros</h1>
-            <br><br>
-=======
-
-<div>
-
-
-
-
         <ul class="slides">
-    <input type="radio" name="radio-btn" id="img-1" checked />
-    <li class="slide-container">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
 		<div class="slide">
 			<img src="../images/panederias/10.jpg" />
         </div>
@@ -65,7 +49,7 @@
 			<label for="img-6" class="prev">&#x2039;</label>
 			<label for="img-2" class="next">&#x203a;</label>
 		</div>
-    </li>
+        </li>
 
     <input type="radio" name="radio-btn" id="img-2" />
     <li class="slide-container">
@@ -99,7 +83,6 @@
 			<label for="img-5" class="next">&#x203a;</label>
 		</div>
     </li>
-
     <input type="radio" name="radio-btn" id="img-5" />
     <li class="slide-container">
         <div class="slide">
@@ -110,9 +93,6 @@
 			<label for="img-6" class="next">&#x203a;</label>
 		</div>
     </li>
-
-   
-
     <li class="nav-dots">
       <label for="img-1" class="nav-dot" id="img-dot-1"></label>
       <label for="img-2" class="nav-dot" id="img-dot-2"></label>
@@ -121,26 +101,17 @@
       <label for="img-5" class="nav-dot" id="img-dot-5"></label>
     </li>
 </ul>
-
-</div>
-
-
+            </div>
         <div class="conte">
             <h1>Acerca de Nosotros</h1>
-
             <div>
             <p>En CocoLate contamos con personal altamente cualificado que le dará una
             atención amable y profesional. Somos reconocidos en Guayaquil por nuestros deliciosos productos de
             pastelería y por nuestra variedad de dulces de corpus. Visítenos, estaremos encantados de
             atenderle.</p>
             </div>
-           
             <br>
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
-
             <div class="contenedor">
-
-
                 <div class="acercaTienda">
 
                     <div class="horario">
@@ -158,25 +129,13 @@
                         <p><i class="fas fa-envelope-open-text"></i> <a href="mailtoo:cocolate@outlok.com">cocolate@outlok.com</a></p>
                         <p><i class="fas fa-map-marked-alt"></i> Av.Turuhuayco y Del Obrero</p>
                     </div>
-
                 </div>
-
-
                 <div id="map" class="map"> </div>
                 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-
                 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
                 <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
                 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
                 <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-
-
-
-
-<<<<<<< HEAD
-
-
-
                 <script>
                     // Initialize and add the map
                     function initMap() {
@@ -243,7 +202,6 @@
 
                         }
 
-=======
                     function fn_ok(rta) {
                         var lat = rta.coords.latitude;
                         var lon = rta.coords.longitude;
@@ -251,44 +209,15 @@
                         var tienlon = '-78.989460'
                         console.log(lat, lon);
                         sucursales(lat, lon, tienlat, tienlon);
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
                     }
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2wESqJq6cIkEb7WMUZswtEoGVtyL4rkM&callback=initMap" async defer></script>
-
-
-
-
-
             </div>
             <br>
             <br>
-            <br>
-            <br>
-
-
-<<<<<<< HEAD
+            </div>
             <?php
             include("piepagina.php");
             ?>
-=======
-        
-
-        
-            <br>
-
-
-
-        <?php
-        include("piepagina.php");
-        ?>
->>>>>>> 2c36312de09de1039282e9290c5d24cb051a8f99
-
-
-        </div>
-
-
-
 </body>
-
 </html>

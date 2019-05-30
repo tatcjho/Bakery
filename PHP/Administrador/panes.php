@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <title>Panes</title>
 </head>
-
 <body>
     <div class="cabecera">
         <?php
@@ -41,8 +40,6 @@
                 <a href="cake.php">Tortas & Cupcakes</a>
                 <a href="cookies.php">Galletas</a>
                 <a href="#Favoritos">Favoritos</a>
-                <button class='btn-primary' name='eliminar' type='submit' onclick="window.location.href='admin_usuarios.php'" >Eliminar Producto</button>
-                
             </div>
         </div>
     <br>

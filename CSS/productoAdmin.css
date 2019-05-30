@@ -21,14 +21,11 @@
 
 .tit {
     width: 30%;
-    /* height: 70px; */
     padding-top: 10px;
-    margin: auto;
-  
 }
 
 .tit h4{
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Oswald', sans-serif;
         margin-left: 10px;
 }
@@ -36,22 +33,20 @@
 .card img{
     height: 200px;
     width: 200px;
-    
 }
 
 .sub .tit h4{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Heebo', sans-serif;   
     text-align: center;
+    color: black;
 }
 
 .sub .hiper {
     width: 70%;
-    /* height: 70px; */
-    margin: auto;
     text-align: right;
     padding-top: 24px;
-    padding-right: 60px;
+    padding-right: 0px;
 }
 
 .sub .hiper a {
@@ -89,30 +84,24 @@
    
 }
 
-.col-3 .card{
-}
-
 
 .col-3 .card img{
-    width: 95%;
+    width: 90%;
     height: 200px;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 11%;
+
 }
 .col-3 a{
     padding-top: 50px;
     font-size: 20px;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
     text-decoration: none;
     font-family: sans-serif;
-    background-color:#c02d54;
-}
-
-.col-3 .card-body{
-    text-align: center;
+    background-color:#2098D1;
 }
 
 .col-3 .btn-primary{
@@ -121,17 +110,21 @@
     border: none;
     text-align: center;
     padding: 10px;
-    margin: 10px;
     text-decoration: none;
-    background-color:#2098D1;
+    background-color: black;
 }
 
-.col-3 .btn-primary:hover{
-    background-color:gray;
-}
-
-.prueba{
+.col-3 .card-body{
     text-align: center;
+}
+
+.card-text{
+    font-family: sans-serif;
+    color: firebrick;
+}
+.card-title{
+    font-family: arial;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 420px){

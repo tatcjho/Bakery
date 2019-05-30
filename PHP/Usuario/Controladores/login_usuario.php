@@ -14,6 +14,7 @@
         $_SESSION['usu_rol'] = $row['usu_rol'];
         $_SESSION['usu_nombres']= $row['usu_nombreApellido'];
         $_SESSION['usu_correo']= $row['usu_correo'];
+        $_SESSION['usu_imagen']= $row['usu_imagen'];
         if ($row['usu_rol'] == "U"){
             
             header("Location: ../../index.php");
@@ -34,6 +35,7 @@
         $_SESSION['emp_nombre'] = $row1['emp_nombre'];
         $_SESSION['emp_ruc']= $row1['emp_ruc'];
         $_SESSION['emp_correo']= $row1['emp_correo'];
+
         header("Location: ../../Empresa/index_empresa.php");
         exit();  
     }else{             

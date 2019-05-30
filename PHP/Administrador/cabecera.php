@@ -25,7 +25,7 @@
         <nav>
             <ul>
                 <li><a href="index_administrador.php">Inicio</a></li>
-                <li><a href="#">Usuarios</a></li>
+                <li><a href="admin_usuarios.php">Usuarios</a></li>
                 <li><a href="agregar_producto.php"s>Pedidos</a></li>
                 <li class="submenu">
                     <a href="#">Productos<span class="fa fa-caret-down"></span></a>

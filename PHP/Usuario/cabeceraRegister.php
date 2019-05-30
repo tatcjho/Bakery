@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../CSS/index.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -34,9 +34,9 @@
 
         <nav>
             <ul>
-                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="../index.php"> <i class="fas fa-home"></i>  Inicio</a></li>
                 <li class="submenu">
-                    <a href="#">Productos<span class="fa fa-caret-down"></span></a>
+                    <a href="#"><i class="fab fa-product-hunt"></i> Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
                         <li><a href="../../pan.php">Panes</a></li>
                         <li><a href="../../cookies.php">Galletas</a></li>
@@ -44,9 +44,10 @@
                         <li> <a href="#">Cupcake</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Pedidos</a></li>
-                <li><a href="#">Contactos</a></li>
-                <li><a href="../login.php">Iniciar Sesion</a></li>
+
+                <li><a href="#"> <i class="fas fa-id-card"></i>  Contactos</a></li>
+                <li><a href="../login.php"><i class='fas fa-user-friends'></i> Iniciar Sesion</a></li>
+                <li><a href="../login.php"><i class="fas fa-cart-plus"></i></a></li>
             </ul>
         </nav>
 

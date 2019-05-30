@@ -46,6 +46,10 @@
                     ?>
                     <form id="formulario01" method="post" action="Controladores/modificar_usuario.php">
                         <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
+                        <label for="cedula" id="label1">Imagen</label>
+                        <br>
+                        <img src="../../images/usuario/<?php echo $row["usu_imagen"]; ?>" width="300px" height="200px" style="margin-left:15%">   
+                        <br>
                         <label for="cedula" id="label1">Cedula</label>
                         <input type="text" id="cedula" name="cedula" value="<?php echo $row["usu_cedula"]; ?>" required placeholder="Ingresar cedula" />
                         <br>
@@ -63,12 +67,6 @@
                         <br>
                         <label for="correo" id="label1">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" value="<?php echo $row["usu_correo"]; ?>" required placeholder="Ingrese el correo electrónico" />
-                        <div class="foto">
-                            <img src="../../images/usuario/<?php echo ($row["usu_imagen"]) ?>" alt="">
-                            <br>
-                            <br>
-                            <input type="file" name="foto" id="foto">
-                        </div>
                         <br>
                         <input type="submit" id="submit" name="modificar" value="Modificar" />
                         <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />

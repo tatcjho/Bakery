@@ -37,7 +37,8 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         
         // insert order details into database
         $fecha = date('Y/m/d h:i:s', time());  
-        $insertOrder = $conn->query("INSERT INTO fac_cabe_compras (cabe_codigo, cabe_fecha, cabe_subtotal, cabe_iva, cabe_total, cabe_estado, cabe_eliminado, cabe_modificado, usu_codigo) VALUES (0,'$fecha', '".$cart->total()."',1.12, '".$cart->total()."',1, 'N', 'N', $usu_codigo)");
+        $total = ".$cart->total()."*1.12;
+        $insertOrder = $conn->query("INSERT INTO fac_cabe_compras (cabe_codigo, cabe_fecha, cabe_subtotal, cabe_iva, cabe_total, cabe_estado, cabe_eliminado, cabe_modificado, usu_codigo) VALUES (0,'$fecha', '".$cart->total()."',1.12, '".$cart->total()*1.12."',1, 'N', 'N', $usu_codigo)");
         # Esto va en el query'".$_SESSION['sessCustomerID']."'
         if($insertOrder)
         {

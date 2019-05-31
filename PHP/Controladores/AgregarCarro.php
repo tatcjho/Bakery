@@ -6,8 +6,9 @@
 
    echo "$precio";
    
-    $fecha = date('Y/m/d h:i:s', time());   
-                          
+    $fecha = date('Y/m/d h:i:s', time());  
+     
+                        
     $sql = "INSERT INTO fac_det_compras VALUES (0, 1, $precio, 1, '$producto')";     
     if ($conn->query($sql) === TRUE) 
     {             

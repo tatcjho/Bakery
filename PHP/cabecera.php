@@ -33,9 +33,9 @@
                     <ul class="children">
                     <?php
                     session_start();
-                        echo "<li><a href='panes.php?usu_codigo=".$_SESSION['usu_codigo']."'>Panes</a></li>";
-                        echo "<li><a href='cookies.php?usu_codigo=".$_SESSION['usu_codigo']."'>Galletas</a></li>";
-                        echo "<li><a href='cake.php?usu_codigo=".$_SESSION['usu_codigo']."'>Tortas</a></li>";
+                        echo "<li><a href='Carrito/Panes/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Panes</a></li>";
+                        echo "<li><a href='Carrito/Galletas/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Galletas</a></li>";
+                        echo "<li><a href='Carrito/Tortas/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Tortas</a></li>";
                     
                     ?>
                     </ul>
@@ -55,7 +55,7 @@
                         echo "<li><a href='login.php'> <i class='fas fa-user-friends'></i> Iniciar Sesion</a></li>";        
                     }
                 ?>
-                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+                <li><a href="Controladores/factura.php"><i class="fas fa-cart-plus"></i></a></li>
             </ul>
         </nav>
     </header>

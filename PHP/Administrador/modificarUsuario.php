@@ -1,10 +1,10 @@
 <?php
-session_start();
-if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
-    header("Location: ../login.php");
-} else if ($_SESSION['usu_rol'] == "A") {
-    header("Location: ../Administrador/index_administrador.php");
-}
+    session_start();
+    if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
+        header("Location: ../login.php");
+    }else if($_SESSION['usu_rol'] == "U"){
+        header("Location: ../index.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,6 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
     <link rel="stylesheet" href="../../CSS/editarPerfil.css">
-    <link rel="stylesheet" href="../../CSS/modificar.css">
 </head>
 
 <body>
@@ -24,40 +23,33 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
         include("cabecera.php");
         ?>
     </div>
-
-
     <div id="navIzq">
-
+        <?php
+        $codigo=$_GET["codigo"];
+        ?>
         <ul>
-
-            <li><a href="editarPerfil.php" class="active">Modificar Cuenta</a></li>
-            <li><a href="editarContrasena.php">Cambiar Contraseña</a></li>
+            <li><a href="" class="active">Modificar Cuenta</a></li>
+            <li><a href="modificarContrasena.php?codigo=<?php echo $codigo?>">Cambiar Contraseña</a></li>
             <li><a href="#contact" class="eliminar">Eliminar Cuenta</a></li>
         </ul>
     </div>
     <div id="derecha">
         <span id="titulo">Modificacion de Cuenta</span>
         <div id="contenedor">
-
-
-
             <?php
-            $codigo = $_SESSION['usu_codigo'];
+            $codigo=$_GET["codigo"];
             $sql = "SELECT * FROM usuario WHERE usu_codigo=$codigo";
             include '../Conexion/conexionBD.php';
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     ?>
-                    <form id="formulario01" method="post" action="Controladores/modificarUsuario.php" enctype="multipart/form-data">
-                        <div class="foto">
-                            <img src="../../images/usuario/<?php echo ($row["usu_imagen"]) ?>" alt="">
-
-                            <input type="file" id="img" name="img"/>
-                        </div>
-                        <br>
-                        <br>
+                    <form id="formulario01" method="post" action="Controladores/modificar_usuario.php">
                         <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
+                        <label for="cedula" id="label1">Imagen</label>
+                        <br>
+                        <img src="../../images/usuario/<?php echo $row["usu_imagen"]; ?>" width="300px" height="200px" style="margin-left:15%">   
+                        <br>
                         <label for="cedula" id="label1">Cedula</label>
                         <input type="text" id="cedula" name="cedula" value="<?php echo $row["usu_cedula"]; ?>" required placeholder="Ingresar cedula" />
                         <br>
@@ -75,8 +67,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
                         <br>
                         <label for="correo" id="label1">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" value="<?php echo $row["usu_correo"]; ?>" required placeholder="Ingrese el correo electrónico" />
-
-
+                        <br>
                         <input type="submit" id="submit" name="modificar" value="Modificar" />
                         <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
                     </form>

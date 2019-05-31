@@ -66,6 +66,13 @@ a{
     text-decoration: none;
     font-family: sans-serif;
 }
+#label1 {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 7px;
+}
 input[type=submit]{
     background-color: #F22F5B;
     border: none;

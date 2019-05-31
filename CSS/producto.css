@@ -90,7 +90,9 @@
    
 }
 
-.col-3 .card{
+.col-3 .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
 
 
@@ -101,6 +103,7 @@
     padding-left: 30px;
     padding-inline-end: 25px;
 }
+
 .col-3 a{
     padding-top: 50px;
     font-size: 20px;
@@ -110,7 +113,7 @@
     margin: 10px;
     text-decoration: none;
     font-family: 'PT Sans Narrow', sans-serif;
-    background-color:#c02d54;
+    background-color:#000;
     border-radius: 10px;
 
 }

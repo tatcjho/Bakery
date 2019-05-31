@@ -15,7 +15,10 @@
     <div class="cabecera">
         <?php
         include("cabecera.php");
-        $codigo=$_GET['codigo'];
+<<<<<<< HEAD
+        //$codigo=$_GET['codigo'];
+=======
+>>>>>>> 129e834857a5b34b7791e2313a8212031430588e
         ?>
     </div>
 

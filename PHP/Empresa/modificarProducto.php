@@ -30,9 +30,9 @@
         <div id="contenedor">
         <?php
         $codigo=$_GET["codigo"];
-        $sql="SELECT * FROM producto,prod_categoria WHERE produ_codigo=$codigo and prod_categoria.cat_id=producto.cat_id and producto.cat_id=1";
-        $sql1="SELECT * FROM producto,prod_categoria WHERE produ_codigo=$codigo and prod_categoria.cat_id=producto.cat_id and producto.cat_id=2";
-        $sql2="SELECT * FROM producto,prod_categoria WHERE produ_codigo=$codigo and prod_categoria.cat_id=producto.cat_id and producto.cat_id=3";
+        $sql="SELECT * FROM producto WHERE produ_codigo=$codigo and producto.cat_id=1";
+        $sql1="SELECT * FROM producto WHERE produ_codigo=$codigo and producto.cat_id=2";
+        $sql2="SELECT * FROM producto WHERE produ_codigo=$codigo and producto.cat_id=3";
         include '../Conexion/conexionBD.php'; 
         $result=$conn->query($sql);
         $result1=$conn->query($sql1);
@@ -56,8 +56,7 @@
                     <input type="number" id="stock" name="stock" value="<?php echo $row["produ_stock"]; ?>" required placeholder="Ingrese el stock"/>
                     <br>
                     <label for="categoria" id="label1">Categoria</label>
-                    <input type="hidden" id="categoria1" name="categoria1" value="<?php echo $row["cat_id"]; ?>" required placeholder="Ingrese la fecha de nacimiento"/>
-                    <input type="text" id="categoria" name="categoria" value="<?php echo $row["cat_nombre"]; ?>" readonly/>
+                    <input type="text" id="categoria" name="categoria" value="<?php echo $row["cat_id"]; ?>" required placeholder="Ingresar categoria"/>
                     <br>
                     <input type="submit" id="submit" name="modificar" value="Modificar"/>
                     <input type="reset" id="cancelar" name="cancelar" value="Cancelar"/>
@@ -83,8 +82,7 @@
                     <input type="number" id="stock" name="stock" value="<?php echo $row1["produ_stock"]; ?>" required placeholder="Ingrese el stock"/>
                     <br>
                     <label for="categoria" id="label1">Categoria</label>
-                    <input type="hidden" id="categoria1" name="categoria1" value="<?php echo $row1["cat_id"]; ?>" required placeholder="Ingrese la fecha de nacimiento"/>
-                    <input type="text" id="categoria" name="categoria" value="<?php echo $row1["cat_nombre"]; ?>" readonly/>
+                    <input type="text" id="categoria" name="categoria" value="<?php echo $row1["cat_id"]; ?>" required placeholder="Ingresar categoria"/>
                     <br>
                     <input type="submit" id="submit" name="modificar" value="Modificar"/>
                     <input type="reset" id="cancelar" name="cancelar" value="Cancelar"/>
@@ -110,8 +108,7 @@
                     <input type="number" id="stock" name="stock" value="<?php echo $row2["produ_stock"]; ?>" required placeholder="Ingrese el stock"/>
                     <br>
                     <label for="categoria" id="label1">Categoria</label>
-                    <input type="hidden" id="categoria1" name="categoria1" value="<?php echo $row2["cat_id"]; ?>" required placeholder="Ingrese la fecha de nacimiento"/>
-                    <input type="text" id="categoria" name="categoria" value="<?php echo $row2["cat_nombre"]; ?>" readonly/>
+                    <input type="text" id="categoria" name="categoria" value="<?php echo $row2["cat_id"]; ?>" required placeholder="Ingresar categoria"/>
                     <br>
                     <input type="submit" id="submit" name="modificar" value="Modificar"/>
                     <input type="reset" id="cancelar" name="cancelar" value="Cancelar"/>

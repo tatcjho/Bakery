@@ -68,7 +68,11 @@ $custRow = $query->fetch_assoc();
         <tr>
             <td colspan="3"></td>
             <?php if($cart->total_items() > 0){ ?>
-            <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' USD'; ?></strong></td>
+            <?php 
+                $cart = $cart->total();
+                $total = $cart * 1.12;
+            ?>
+            <td class="text-center"><strong>Total <?php echo '$'.$total.' USD'; ?></strong></td>
             <?php } ?>
         </tr>
     </tfoot>

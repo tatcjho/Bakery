@@ -67,7 +67,9 @@ $usu_codigo=$_GET['usu_codigo'];
             <?php echo "<td><a href='index.php?usu_codigo=".$usu_codigo."' class='btn btn-warning'><i class='glyphicon glyphicon-menu-left'></i> Seguir Comprando</a></td>";?>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
-            <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' USD'; ?></strong></td>
+            <?php $cart=$cart->total(); ?>
+            <?php $total = $cart*1.12; ?>
+            <td class="text-center"><strong>Total <?php echo '$'.$total.' USD'; ?></strong></td>
             <?php echo " <td><a href='checkout.php?usu_codigo=".$usu_codigo."' class='btn btn-success btn-block'>Checkout <i class='glyphicon glyphicon-menu-right'></i></a></td>";?>
             <?php } ?>
         </tr>

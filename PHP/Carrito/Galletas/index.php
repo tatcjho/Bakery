@@ -20,13 +20,10 @@ $usu_codigo=$_GET['usu_codigo'];
 <body>
 <div class="container">
     <h1>Productos</h1>
-    <a href='viewCart.php?usu_codigo=".$usu_codigo."' class="cart-link" title="View Cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-   
+    <?php echo "<a href='viewCart.php?usu_codigo=".$usu_codigo."' class='cart-link' title='View Cart'><i class='glyphicon glyphicon-shopping-cart'></i></a>";?>
     <div id="products" class="row list-group">
         <?php
-        //get rows query
-        
-        
+       
         $query = $conn->query("SELECT * FROM producto WHERE cat_id=2");
         if($query->num_rows > 0){ 
             while($row = $query->fetch_assoc()){

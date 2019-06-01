@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <?php
+    include("../archivosSecu/loader.php")
+    ?>
     <div class="cabecera">
         <?php
         include("cabecera.php");
@@ -103,17 +106,17 @@
     <div class="conte">
         <h1>Acerca de nosotros</h1>
         <div>
-        <p><b>Cocolate </b> cuenta con personal altamenta capacitado para que vivas una experiencia única de principio 
-                  a fin, estamos comprometidos en brindarte el mejor servicio ademas de ofrecerle productos del dia y 
-                  de la más alta calidad. Nuestros ingredientes frescos y listos para darte una experiencia de sabor unica
-                  cuentan con estandares de calidad que certifican la pureza y frescura de nuestros ingredientes asi 
-                  como de nuestros productos.</p>
+            <p><b>Cocolate </b> cuenta con personal altamenta capacitado para que vivas una experiencia única de principio
+                a fin, estamos comprometidos en brindarte el mejor servicio ademas de ofrecerle productos del dia y
+                de la más alta calidad. Nuestros ingredientes frescos y listos para darte una experiencia de sabor unica
+                cuentan con estandares de calidad que certifican la pureza y frescura de nuestros ingredientes asi
+                como de nuestros productos.</p>
 
-                  <p>Ven y visitanos en nuestro nuevo y renovado local, estamos ubicados en la <b>Av. Isabel La Católica N. 23-10 y Madrid
-                  </b> a 50 mts de la  <b>Universidad Politecnica Salesiana</b>, aqui podras encontrar
-                   una gran variedad de panes, galletas y nuestras exquisitas tortas. Ademas si eres amante de los bocadillos
-                   y cupcakes aqui los encontraras, tenemos disponibles más de cien deliciosas opciones para satisfacerte. Ven y vive 
-                   la experiencia <b>Cocolate. </b> </p>
+            <p>Ven y visitanos en nuestro nuevo y renovado local, estamos ubicados en la <b>Av. Isabel La Católica N. 23-10 y Madrid
+                </b> a 50 mts de la <b>Universidad Politecnica Salesiana</b>, aqui podras encontrar
+                una gran variedad de panes, galletas y nuestras exquisitas tortas. Ademas si eres amante de los bocadillos
+                y cupcakes aqui los encontraras, tenemos disponibles más de cien deliciosas opciones para satisfacerte. Ven y vive
+                la experiencia <b>Cocolate. </b> </p>
         </div>
         <br>
         <div class="contenedor">

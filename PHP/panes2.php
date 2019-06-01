@@ -17,6 +17,9 @@
 <body>
 
 <?php
+
+    //include("../archivosSecu/loader.php");
+
     include("cabecera.php");
     ?>
     <br>

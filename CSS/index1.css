@@ -7,6 +7,7 @@
     margin: 0 auto;
     overflow: hidden;
     font-family: sans-serif;
+
 }
 
 .fondo1 {
@@ -36,12 +37,13 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    z-index: 1;
+
 }
 
 .texto {
     width: 80%;
     margin: auto;
+
 }
 
 .texto h2 {
@@ -49,6 +51,7 @@
     font-size: 100px;
     margin: auto;
     font-family: one;
+    z-index: 10;
 }
 
 .texto p {

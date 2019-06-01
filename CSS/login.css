@@ -8,7 +8,7 @@
 form {
     width: 450px;
     margin: auto;
-    background-color: #B8B8B8;
+    background-color: rgba(59, 58, 58, 0.6);
     padding: 10px 20px;
     border-radius: 7px;
 }

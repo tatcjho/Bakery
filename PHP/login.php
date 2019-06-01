@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <?php
+    include("../archivosSecu/loader.php")
+    ?>
     <div class="cabecera">
         <?php
         include("cabecera.php");

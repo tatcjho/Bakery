@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +11,11 @@
 </head>
 
 <body>
+
+  <?php
+    include("../archivosSecu/loader.php")
+  ?>
+
     <div class="cabecera">
         <?php
         include("cabecera.php");
@@ -98,6 +102,7 @@
     <?php
     include("piepagina.php");
     ?>
+    <!-- <script src="../js/loader.js"></script> -->
 </body>
 
 </html>

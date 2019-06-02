@@ -1,20 +1,26 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
+    header("Location: ../../login.php");
+} else if ($_SESSION['usu_rol'] == "A") {
+    header("Location: ../../Administrador/index_administrador.php");
+}
+error_reporting(0);
+ini_set('display_errors', 0);
+?>
+<?php
 // include database configuration file
 include '../../Conexion/conexionBD.php';
-
 // initializ shopping cart class
 include 'Cart.php';
-$usu_codigo=$_GET['usu_codigo'];
+$usu_codigo=$_SESSION['usu_codigo'];
 $cart = new Cart;
-
 // redirect to home if cart is empty
 if($cart->total_items() <= 0){
     header("Location: index.php");
 }
-
 // set customer ID in session
-$_SESSION['sessCustomerID'] = 1;
-
+$_SESSION['sessCustomerID'] = $usu_codigo;
 // get customer details by session customer ID
 $query = $conn->query("SELECT * FROM usuario WHERE usu_codigo = ".$_SESSION['sessCustomerID']);
 $custRow = $query->fetch_assoc();
@@ -78,14 +84,14 @@ $custRow = $query->fetch_assoc();
     </tfoot>
     </table>
     <div class="shipAddr">
-        <h4>Shipping Details</h4>
-        <p><?php echo $custRow['usu_nombre']; ?></p>
+        <h4>Detalles del Pedido</h4>
+        <p><?php echo $custRow['usu_nombreApellido']; ?></p>
         <p><?php echo $custRow['usu_correo']; ?></p>
         <p><?php echo $custRow['usu_telefono']; ?></p>
         <p><?php echo $custRow['usu_direccion']; ?></p>
     </div>
     <div class="footBtn">
-        <?php echo "<a href='index.php?usu_codigo=".$usu_codigo."'' class='btn btn-warning'><i class='glyphicon glyphicon-menu-left'></i> Seguir Comprando</a>";?>
+        <?php echo "<a href='../../index.php' class='btn btn-warning'><i class='glyphicon glyphicon-menu-left'></i> Seguir Comprando</a>";?>
         <?php echo "<a href='cartAction.php?usu_codigo=".$usu_codigo."&action=placeOrder' class='btn btn-success orderBtn'>Comprar <i class='glyphicon glyphicon-menu-right'></i></a>";?>
     </div>
 </div>

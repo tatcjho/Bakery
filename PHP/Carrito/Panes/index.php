@@ -1,7 +1,6 @@
 <?php
 // include database configuration file
 include '../../Conexion/conexionBD.php';
-$usu_codigo=$_GET['usu_codigo'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +16,9 @@ $usu_codigo=$_GET['usu_codigo'];
     </style>
 </head>
 <body>
-        <?php
-        include("../cabecera.php");
-        ?>
 <div class="container">
     <h1>Productos</h1>
-    <?php echo "<a href='viewCart.php?usu_codigo=".$usu_codigo."' class='cart-link' title='View Cart'><i class='glyphicon glyphicon-shopping-cart'></i></a>";?>
+    <?php echo "<a href='../viewCart.php' class='cart-link' title='View Cart'><i class='glyphicon glyphicon-shopping-cart'></i></a>";?>
     <div id="products" class="row list-group">
         <?php
         $query = $conn->query("SELECT * FROM producto WHERE cat_id=1");
@@ -40,9 +36,7 @@ $usu_codigo=$_GET['usu_codigo'];
                             <p class="lead"><?php echo '$'.$row["produ_precio"].' USD'; ?></p>
                         </div>
                         <div class="col-md-6">
-                            
-                            <?php echo "<a class='btn btn-success' href='cartAction.php?usu_codigo=".$usu_codigo."&action=addToCart&id=".$row['produ_codigo']."'>Añadir al carro</a>";?>
-                                                                 
+                            <?php echo "<a class='btn btn-success' href='cartAction.php?&action=addToCart&id=".$row['produ_codigo']."'>Añadir al carro</a>";?>              
                         </div>
                     </div>
                 </div>

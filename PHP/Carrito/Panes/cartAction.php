@@ -3,7 +3,6 @@
 include 'Cart.php';
 $cart = new Cart;
 $usu_codigo=$_GET['usu_codigo'];
-
 // include database configuration file
 include '../../Conexion/conexionBD.php';
 if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
@@ -21,7 +20,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         
         $insertItem = $cart->insert($itemData);
         #$redirectLoc = $insertItem?'viewCart.php':'index.php';
-        $redirectLoc = $insertItem?"viewCart.php?usu_codigo=".$usu_codigo."":"index.php?usu_codigo=".$usu_codigo."";
+        $redirectLoc = $insertItem?"../viewCart.php":"index.php";
         header("Location: ".$redirectLoc);
     }elseif($_REQUEST['action'] == 'updateCartItem' && !empty($_REQUEST['id'])){
         $itemData = array(
@@ -32,17 +31,17 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         echo $updateItem?'ok':'err';die;
     }elseif($_REQUEST['action'] == 'removeCartItem' && !empty($_REQUEST['id'])){
         $deleteItem = $cart->remove($_REQUEST['id']);
-        header("Location: viewCart.php?usu_codigo=".$usu_codigo."");
+        header("Location: ../viewCart.php");
     }elseif($_REQUEST['action'] == 'placeOrder' && $cart->total_items() > 0 && !empty($_SESSION['sessCustomerID'])){
         
         // insert order details into database
-        $fecha = date('Y/m/d h:i:s', time());  
+        date_default_timezone_set("America/Guayaquil");
+        $fecha = date('Y/m/d h:i:s', time());   
         $total = ".$cart->total()."*1.12;
         $insertOrder = $conn->query("INSERT INTO fac_cabe_compras (cabe_codigo, cabe_fecha, cabe_subtotal, cabe_iva, cabe_total, cabe_estado, cabe_eliminado, cabe_modificado, usu_codigo) VALUES (0,'$fecha', '".$cart->total()."',1.12, '".$cart->total()*1.12."',1, 'N', 'N', $usu_codigo)");
         # Esto va en el query'".$_SESSION['sessCustomerID']."'
         if($insertOrder)
         {
-           
             $orderID = $conn->insert_id;
             $sql = '';
             // get cart items
@@ -65,7 +64,6 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             else
             {
                 header("Location: checkout.php?usu_codigo=".$usu_codigo."");
-                
             }
         }
         else

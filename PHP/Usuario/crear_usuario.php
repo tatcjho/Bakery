@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
     <meta charset="UTF-8">
     <title>Registrarse</title>
     <link rel="stylesheet" href="../../CSS/crear_usuario.css">
 </head>
-
 <body>
     <?php
     include("../../archivosSecu/loader.php");

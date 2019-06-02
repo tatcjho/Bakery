@@ -19,15 +19,17 @@
     $telefono = isset($_POST["telefono"]) ? trim($_POST["telefono"]): null;                 
     $correo = isset($_POST["correo"]) ? trim($_POST["correo"]): null;         
     $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null;                 
-    $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;     
-    $fecha_Creacion = date('Y/m/d h:i:s', time());  
+    $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;    
+    
+    date_default_timezone_set("America/Guayaquil");
+    $fecha = date('Y/m/d h:i:s', time());  
     
     if(isset($_FILES['img'])){
         $img_nombre=$_FILES['img']['name'];
         $img_tmp=$_FILES['img']['tmp_name'];
         $img_ruta="../../../images/usuario/".$img_nombre;
         if(copy($img_tmp,$img_ruta)){
-            $sql = "INSERT INTO usuario VALUES (0, 'U', '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento','$img_nombre' , 'N', 'N', '$fecha_Creacion', null)";
+            $sql = "INSERT INTO usuario VALUES (0, 'U', '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento','$img_nombre' , 'N', 'N', '$fecha', null)";
             if ($conn->query($sql) === TRUE) {
                 echo "Usuario Creado";
                 header('Refresh: 1; URL=../../login.php');

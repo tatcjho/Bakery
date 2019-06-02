@@ -32,9 +32,9 @@
                     <a href="#"> <i class="fab fa-product-hunt"></i> Productos<span class="fa fa-caret-down"></span></a>
                     <ul class="children">
                     <?php
-                        echo "<li><a href='../Carrito/Panes/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Panes</a></li>";
-                        echo "<li><a href='../Carrito/Galletas/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Galletas</a></li>";
-                        echo "<li><a href='../Carrito/Tortas/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Tortas</a></li>";
+                        echo "<li><a href='../Carrito/Panes/index.php'>Panes</a></li>";
+                        echo "<li><a href='../Carrito/Galletas/index.php'>Galletas</a></li>";
+                        echo "<li><a href='../Carrito/Tortas/index.php'>Tortas</a></li>";
                     ?>
                     </ul>
                 </li>
@@ -52,7 +52,7 @@
                         echo "<li><a href='login.php'> <i class='fas fa-user-friends'></i> Iniciar Sesion</a></li>";        
                     }
                 ?>
-                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+                <li><a href="../Carrito/viewCart.php"><i class="fas fa-cart-plus"></i></a></li>
             </ul>
         </nav>
     </header>

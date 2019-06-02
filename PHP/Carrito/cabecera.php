@@ -32,9 +32,9 @@
                     <ul class="children">
                     <?php
                     session_start();
-                        echo "<li><a href='Carrito/Panes/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Panes</a></li>";
-                        echo "<li><a href='Carrito/Galletas/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Galletas</a></li>";
-                        echo "<li><a href='Carrito/Tortas/index.php?usu_codigo=".$_SESSION['usu_codigo']."'>Tortas</a></li>";
+                        echo "<li><a href='Carrito/Panes/index.php'>Panes</a></li>";
+                        echo "<li><a href='Carrito/Galletas/index.php'>Galletas</a></li>";
+                        echo "<li><a href='Carrito/Tortas/index.php'>Tortas</a></li>";
                     ?>
                     </ul>
                 </li>

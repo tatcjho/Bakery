@@ -37,7 +37,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
         <div id="contenedor">
             <form id="formulario01" method="post" action="Controladores/cambiar_foto.php" enctype="multipart/form-data">
             <div id="imagen">
-            <img src="../../images/usuario/<?php echo ($_SESSION["usu_imagen"]) ?>" alt=""  width="250" height="250"> 
+            <img src="../../images/usuario/<?php echo ($_SESSION["usu_imagen"]) ?>" alt=""  width="200" height="200"> 
             <br>
             <input type="file" id="img" name="img"/>    
             </div>

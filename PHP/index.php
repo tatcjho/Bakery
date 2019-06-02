@@ -76,7 +76,7 @@
                     <div class="columnasx3">
                         <img src="../images/panes/lobster-tail-pastry.jpg" alt="">
                         <div class="prueba">
-                            <a href="panes.php">COMPRAR PANES</a>
+                            <a href="Carrito/Panes/index.php">COMPRAR PANES</a>
                         </div>
                     </div>
 
@@ -84,13 +84,13 @@
                     <div class="columnasx3">
                         <img src="../images/tortas/rainbow-cake2.jpg" alt="">
                         <div class="prueba">
-                            <a href="cake.php">COMPRAR TORTAS & CUPCAKES </a>
+                            <a href="Carrito/Tortas/index.php">COMPRAR TORTAS & CUPCAKES </a>
                         </div>
                     </div>
                     <div class="columnasx3">
                         <img src="../images/galletas/chocolate-chip-cookies.jpg" alt="">
                         <div class="prueba">
-                            <a href="cookies.php">COMPRAR GALLETAS</a>
+                            <a href="Carrito/Galletas/index.php">COMPRAR GALLETAS</a>
                         </div>
 
                     </div>

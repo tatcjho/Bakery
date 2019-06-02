@@ -4,7 +4,7 @@ include '../../Conexion/conexionBD.php';
 
 // initializ shopping cart class
 include 'Cart.php';
-$usu_codigo=$_GET['usu_codigo'];
+$usu_codigo=$_SESSION['usu_codigo'];
 $cart = new Cart;
 
 // redirect to home if cart is empty
@@ -13,10 +13,9 @@ if($cart->total_items() <= 0){
 }
 
 // set customer ID in session
-$_SESSION['sessCustomerID'] = 1;
-
+$_SESSION['sessCustomerID'] = $usu_codigo;
 // get customer details by session customer ID
-$query = $conn->query("SELECT * FROM usuario WHERE usu_codigo = ".$_SESSION['sessCustomerID']);
+$query = $conn->query("SELECT * FROM usuario WHERE usu_codigo = ".$_SESSION['usu_codigo']);
 $custRow = $query->fetch_assoc();
 ?>
 <!DOCTYPE html>
@@ -85,8 +84,8 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $custRow['usu_direccion']; ?></p>
     </div>
     <div class="footBtn">
-        <?php echo "<a href='index.php?usu_codigo=".$usu_codigo."'' class='btn btn-warning'><i class='glyphicon glyphicon-menu-left'></i> Seguir Comprando</a>";?>
-        <?php echo "<a href='cartAction.php?usu_codigo=".$usu_codigo."&action=placeOrder' class='btn btn-success orderBtn'>Comprar <i class='glyphicon glyphicon-menu-right'></i></a>";?>
+        <?php echo "<a href='../../index.php' class='btn btn-warning'><i class='glyphicon glyphicon-menu-left'></i> Seguir Comprando</a>";?>
+        <?php echo "<a href='cartAction.php?&action=placeOrder' class='btn btn-success orderBtn'>Comprar <i class='glyphicon glyphicon-menu-right'></i></a>";?>
     </div>
 </div>
 </body>

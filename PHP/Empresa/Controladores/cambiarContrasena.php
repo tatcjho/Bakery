@@ -27,6 +27,7 @@
         $result=$conn->query($sqlContrasena1);
         
         if($result->num_rows > 0){
+            
             date_default_timezone_set("America/Guayaquil");
             $fecha = date('Y-m-d H:i:s', time());
             

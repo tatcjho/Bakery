@@ -1,7 +1,6 @@
 <?php session_start();
 class Cart {
     protected $cart_contents = array();
-    
     public function __construct(){
         // get the shopping cart array from the session
         $this->cart_contents = !empty($_SESSION['cart_contents'])?$_SESSION['cart_contents']:NULL;
@@ -10,7 +9,6 @@ class Cart {
             $this->cart_contents = array('cart_total' => 0, 'total_items' => 0);
         }
     }
-    
     /**
      * Cart Contents: Returns the entire cart array
      * @param    bool
@@ -19,11 +17,9 @@ class Cart {
     public function contents(){
         // rearrange the newest first
         $cart = array_reverse($this->cart_contents);
-
         // remove these so they don't create a problem when showing the cart table
         unset($cart['total_items']);
         unset($cart['cart_total']);
-
         return $cart;
     }
     
@@ -172,7 +168,6 @@ class Cart {
         $this->save_cart();
         return TRUE;
      }
-     
     /**
      * Destroy the cart: Empties the cart and destroy the session
      * @return    void

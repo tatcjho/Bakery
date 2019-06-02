@@ -3,7 +3,6 @@
 include 'Cart.php';
 $cart = new Cart;
 $usu_codigo=$_GET['usu_codigo'];
-
 // include database configuration file
 include '../../Conexion/conexionBD.php';
 if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
@@ -21,7 +20,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         
         $insertItem = $cart->insert($itemData);
         #$redirectLoc = $insertItem?'viewCart.php':'index.php';
-        $redirectLoc = $insertItem?"viewCart.php?usu_codigo=".$usu_codigo."":"index.php?usu_codigo=".$usu_codigo."";
+        $redirectLoc = $insertItem?"../viewCart.php":"index.php";
         header("Location: ".$redirectLoc);
     }elseif($_REQUEST['action'] == 'updateCartItem' && !empty($_REQUEST['id'])){
         $itemData = array(
@@ -32,7 +31,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         echo $updateItem?'ok':'err';die;
     }elseif($_REQUEST['action'] == 'removeCartItem' && !empty($_REQUEST['id'])){
         $deleteItem = $cart->remove($_REQUEST['id']);
-        header("Location: viewCart.php?usu_codigo=".$usu_codigo."");
+        header("Location: ../viewCart.php");
     }elseif($_REQUEST['action'] == 'placeOrder' && $cart->total_items() > 0 && !empty($_SESSION['sessCustomerID'])){
         
         // insert order details into database

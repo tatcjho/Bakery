@@ -9,8 +9,12 @@ if(!isset($_REQUEST['id'])){
     <title>Orden Exitosa</title>
     <meta charset="utf-8">
     <style>
-    .container{width: 100%;padding: 50px;}
-    p{color: #34a853;font-size: 18px;}
+    .container{
+        width: 100%;
+        padding: 20px;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
     </style>
 </head>
 <body>

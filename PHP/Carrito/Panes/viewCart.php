@@ -28,7 +28,6 @@ $usu_codigo=$_GET['usu_codigo'];
     }
     </script>
 </head>
-</head>
 <body>
 <div class="container">
     <h1>Carro de Compras</h1>

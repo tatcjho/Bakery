@@ -16,7 +16,6 @@ $usu_codigo=$_GET['usu_codigo'];
     .cart-link{width: 100%;text-align: right;display: block;font-size: 22px;}
     </style>
 </head>
-</head>
 <body>
 <div class="container">
     <h1>Productos</h1>
@@ -33,7 +32,7 @@ $usu_codigo=$_GET['usu_codigo'];
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["cat_id"]; ?></h4>
                     <p class="list-group-item-text"><?php echo $row["produ_nombre"]; ?></p>
-                    <?php #echo "<p><img class='card-img-top' src='../../images/panes/".$row['produ_imagen']."' alt=''></p>"; ?>
+                    <img class='card-img-top' src='../../../images/galletas/<?php echo $row["produ_imagen"]; ?>' alt='' >
                     <div class="row">
                         <div class="col-md-6">
                             <p class="lead"><?php echo '$'.$row["produ_precio"].' USD'; ?></p>

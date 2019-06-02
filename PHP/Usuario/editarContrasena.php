@@ -25,6 +25,7 @@
         <ul>
             <li><a href="editarPerfil.php">Modificar Cuenta</a></li>
             <li><a href="editarContrasena.php" class="active">Modificar Contraseña</a></li>
+            <li><a href="cambiarFoto.php">Cambiar Imagen</a></li>
             <li><a href="#contact" class="eliminar">Eliminar Cuenta</a></li>
         </ul>
     </div>

@@ -26,7 +26,7 @@
         $img_nombre=$_FILES['img']['name'];
         $img_tmp=$_FILES['img']['tmp_name'];
         $img_ruta="../../../images/usuario/".$img_nombre;
-        #if(copy($img_tmp,$img_ruta)){
+        if(copy($img_tmp,$img_ruta)){
             $sql = "INSERT INTO usuario VALUES (0, 'U', '$cedula', '$nombreApellido', '$direccion', '$telefono', '$correo', MD5('$contrasena'), '$fechaNacimiento','$img_nombre' , 'N', 'N', '$fecha_Creacion', null)";
             if ($conn->query($sql) === TRUE) {
                 echo "Usuario Creado";
@@ -40,7 +40,7 @@
                     header('Refresh: 1; URL=../crear_usuario.php');
                 }
             }
-        #}
+        }
     }
     ?>
 </body>

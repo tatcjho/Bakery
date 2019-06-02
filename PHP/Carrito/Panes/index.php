@@ -16,14 +16,15 @@ $usu_codigo=$_GET['usu_codigo'];
     .cart-link{width: 100%;text-align: right;display: block;font-size: 22px;}
     </style>
 </head>
-</head>
 <body>
+        <?php
+        include("../cabecera.php");
+        ?>
 <div class="container">
     <h1>Productos</h1>
     <?php echo "<a href='viewCart.php?usu_codigo=".$usu_codigo."' class='cart-link' title='View Cart'><i class='glyphicon glyphicon-shopping-cart'></i></a>";?>
     <div id="products" class="row list-group">
         <?php
-       
         $query = $conn->query("SELECT * FROM producto WHERE cat_id=1");
         if($query->num_rows > 0){ 
             while($row = $query->fetch_assoc()){
@@ -33,7 +34,7 @@ $usu_codigo=$_GET['usu_codigo'];
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["cat_id"]; ?></h4>
                     <p class="list-group-item-text"><?php echo $row["produ_nombre"]; ?></p>
-                    <?php #echo "<p><img class='card-img-top' src='../../images/panes/".$row['produ_imagen']."' alt=''></p>"; ?>
+                    <img class='card-img-top' src='../../../images/panes/<?php echo $row["produ_imagen"]; ?>' alt='' width="300px" height="200px">
                     <div class="row">
                         <div class="col-md-6">
                             <p class="lead"><?php echo '$'.$row["produ_precio"].' USD'; ?></p>

@@ -43,7 +43,7 @@
                         echo "<li class='submenu'>";
                             echo "<a href='#'>".$_SESSION['emp_nombre']."<span class='fa fa-caret-down'></span></a>";
                             echo "<ul class='children'>";
-                                echo "<li><a href='editarEmpresa.php'>Editar Empresa</a></li>";
+                                echo "<li><a href='editarEmpresa.php'>Editar Cuenta</a></li>";
                                 echo "<li><a href='../Conexion/logout.php'>Cerrar Sesion</a></li>";
                             echo "</ul>";
                         echo "</li>";

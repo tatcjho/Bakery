@@ -15,7 +15,6 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
     <link rel="stylesheet" href="../../CSS/editarPerfil.css">
-    <link rel="stylesheet" href="../../CSS/modificar.css">
 </head>
 
 <body>
@@ -24,23 +23,17 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
         include("cabecera.php");
         ?>
     </div>
-
-
     <div id="navIzq">
-
         <ul>
-
             <li><a href="editarPerfil.php" class="active">Modificar Cuenta</a></li>
             <li><a href="editarContrasena.php">Cambiar Contraseña</a></li>
+            <li><a href="cambiarFoto.php">Cambiar Imagen</a></li>
             <li><a href="#contact" class="eliminar">Eliminar Cuenta</a></li>
         </ul>
     </div>
     <div id="derecha">
         <span id="titulo">Modificacion de Cuenta</span>
         <div id="contenedor">
-
-
-
             <?php
             $codigo = $_SESSION['usu_codigo'];
             $sql = "SELECT * FROM usuario WHERE usu_codigo=$codigo";
@@ -49,14 +42,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     ?>
-                    <form id="formulario01" method="post" action="Controladores/modificarUsuario.php" enctype="multipart/form-data">
-                        <div class="foto">
-                            <img src="../../images/usuario/<?php echo ($row["usu_imagen"]) ?>" alt="">
-
-                            <input type="file" id="img" name="img"/>
-                        </div>
-                        <br>
-                        <br>
+                    <form id="formulario01" method="post" action="Controladores/modificarUsuario.php">
                         <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
                         <label for="cedula" id="label1">Cedula</label>
                         <input type="text" id="cedula" name="cedula" value="<?php echo $row["usu_cedula"]; ?>" required placeholder="Ingresar cedula" />
@@ -75,8 +61,7 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
                         <br>
                         <label for="correo" id="label1">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" value="<?php echo $row["usu_correo"]; ?>" required placeholder="Ingrese el correo electrónico" />
-
-
+                        <br>
                         <input type="submit" id="submit" name="modificar" value="Modificar" />
                         <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
                     </form>

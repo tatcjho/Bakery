@@ -59,6 +59,7 @@ $cart = new Cart;
         <?php } }else{ ?>
         <tr><td colspan="5"><p>Tu carrito esta vacio.....</p></td>
         <?php } ?>
+        
     </tbody>
     <tfoot>
         <tr>

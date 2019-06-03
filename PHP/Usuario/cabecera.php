@@ -45,6 +45,7 @@
                             echo "<a href='#'><i class='fas fa-user-friends'></i> ".$_SESSION['usu_nombres']."<span class='fa fa-caret-down'></span></a>";
                             echo "<ul class='children'>";
                             echo "<li><a href='editarPerfil.php'>Editar Perfil</a></li>";
+                            echo "<li><a href='compras.php'>Compras</a></li>";
                             echo "<li><a href='../Conexion/logout.php'>Cerrar Sesion</a></li>";
                             echo "</ul>";
                         echo "</li>";

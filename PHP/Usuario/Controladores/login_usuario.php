@@ -3,7 +3,7 @@
     include '../../Conexion/conexionBD.php'; 
     $usuario = isset($_POST["correo"]) ? trim($_POST["correo"]) : null;     
     $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null; 
-    $user = "SELECT * FROM usuario WHERE usu_correo = '$usuario' and usu_password = MD5('$contrasena')"; 
+    $user = "SELECT * FROM usuario WHERE usu_correo = '$usuario' and usu_password = MD5('$contrasena') and usu_eliminado != 'S' "; 
     $empresa = "SELECT * FROM empresa WHERE emp_correo='$usuario' and emp_password = MD5('$contrasena')";
 
     $result = $conn->query($user);

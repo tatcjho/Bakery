@@ -1,9 +1,9 @@
 <?php
     session_start();
     if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']==false){
-        header("Location: ../login.php");
-    }else if($_SESSION['usu_rol'] == "U"){
-        header("Location: ../index.php");
+        header("Location: ../../login.php");
+    }else if($_SESSION['usu_rol'] == "A"){
+        header("Location: ../../Administrador/index_administrador.php");
     }
 ?>
 <!DOCTYPE html>
@@ -16,6 +16,7 @@
     <?php 
         include '../../Conexion/conexionBD.php'; 
         $codigo=$_POST["codigo"];
+    
         $sql="SELECT * FROM usuario where usu_codigo=$codigo";
         $result=$conn->query($sql);
         
@@ -30,7 +31,7 @@
             
             if($conn->query($sqlContrasena2) === TRUE){
                 echo "Cuenta eliminada :/";
-                header('Refresh: 2; URL=../index_administrador.php');
+                header('Refresh: 2; URL=../../Conexion/logout.php');
             }else {
                 echo "<p>Error: " . mysqli_error($conn) . "</p>"; 
             }

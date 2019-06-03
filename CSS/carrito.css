@@ -1,0 +1,11 @@
+#regresar{
+    background-color: #337ab7;
+    width: 10%;
+    height: 5%;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+#regresar a{
+    color: white;
+    font-size: 20px;
+}

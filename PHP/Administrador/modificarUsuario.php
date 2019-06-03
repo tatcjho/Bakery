@@ -30,7 +30,7 @@
         <ul>
             <li><a href="" class="active">Modificar Cuenta</a></li>
             <li><a href="modificarContrasena.php?codigo=<?php echo $codigo?>">Cambiar Contraseña</a></li>
-            <li><a href="#contact" class="eliminar">Eliminar Cuenta</a></li>
+            <li><a href="eliminarUsuario.php?codigo=<?php echo $codigo?>" class="eliminar">Eliminar Cuenta</a></li>
         </ul>
     </div>
     <div id="derecha">

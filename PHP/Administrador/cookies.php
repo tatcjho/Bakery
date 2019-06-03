@@ -48,7 +48,7 @@
         <div class="container">
         <?php
             include '../Conexion/conexionBD.php';
-            $sql = "SELECT * FROM producto WHERE cat_id=2";
+            $sql = "SELECT * FROM producto WHERE cat_id=2 and produ_eliminado !='S'";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
@@ -60,7 +60,7 @@
                                     echo "<h5 class='card-title'>$".$row['produ_precio']."</h5>";
                                     echo "<p class='card-text'>".$row['produ_nombre']."</p>";
                                     echo "<a href='modificarProducto.php?codigo=".$row['produ_codigo']."'><div class='btn-primary'>Modificar</div></a>";
-                                    echo "<a href='eliminar_usuario.php?codigo=".$row['produ_codigo']."'><div class='btn-primary'>Eliminar</div></a>";
+                                    echo "<a href='eliminarProducto.php?codigo=".$row['produ_codigo']."'><div class='btn-primary'>Eliminar</div></a>";
                                 echo "</div>";
                             echo "</div>";
                         echo "</div>";

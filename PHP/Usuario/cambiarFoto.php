@@ -28,9 +28,9 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
     <div id="navIzq">
         <ul>
             <li><a href="editarPerfil.php">Modificar Cuenta</a></li>
-            <li><a href="editarContrasena.php">Cambiar Contraseña</a></li>
+            <li><a href="editarContrasena.php">Modificar Contraseña</a></li>
             <li><a href=""  class="active">Cambiar Imagen</a></li>
-            <li><a href="#contact" class="eliminar">Eliminar Cuenta</a></li>
+            <li><a href="eliminarPerfil.php" class="eliminar">Eliminar Cuenta</a></li>
         </ul>
     </div>
     <div id="derecha">

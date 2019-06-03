@@ -22,30 +22,27 @@
         ?>
     </div>
     <div id="navIzq">
-          <?php
-            $codigo=$_GET["codigo"];
+        <?php
+        $codigo=$_GET["codigo"];
         ?>
         <ul>
             <li><a href="modificarUsuario.php?codigo=<?php echo $codigo?>">Modificar Cuenta</a></li>
-            <li><a href="" class="active">Modificar Contraseña</a></li>
-            <li><a href="eliminarUsuario.php?codigo=<?php echo $codigo?>" class="eliminar">Eliminar Cuenta</a></li>
+            <li><a href="modificarContrasena.php?codigo=<?php echo $codigo?>">Modificar Contraseña</a></li>
+            <li><a href="" class="eliminar">Eliminar Cuenta</a></li>
         </ul>
     </div>
     <div id="derecha">
-        <span id="titulo">Modificacion de Contraseña</span>
+        <span id="titulo">Eliminar Cuenta</span>
+        <div id="titulo2">
+                    <span>¿Esta seguro que desea eliminar su cuenta?</span>
+        </div>
         <?php
             $codigo=$_GET["codigo"];
         ?>
         <div id="contenedor">
-            <form id="formulario01" method="post" action="Controladores/modificar_contrasena.php">
+            <form id="formulario01" method="post" action="Controladores/eliminar_usuario.php">
                 <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>"/>
-                <label for="contrasena" id="label1">Constraseña actual</label>
-                <input type="password" id="contrasena1" name="contrasena1" value="" required placeholder="Ingrese su contraseña actual">
-                <br>
-                <label for="contrasena" id="label1">Constraseña nueva</label>
-                <input type="password" id="contrasena2" name="contrasena2" value="" required placeholder="Ingresar contraseña nueva">
-                <br>
-                <input type="submit" id="submit" name="modificar" value="Modificar" />
+                <input type="submit" id="submit" name="modificar" value="Eliminar" />
                 <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
             </form>
         </div>

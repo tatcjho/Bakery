@@ -8,6 +8,7 @@ include '../../Conexion/conexionBD.php';
     <title>Carrito de Compras</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../CSS/carrito.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -16,6 +17,11 @@ include '../../Conexion/conexionBD.php';
     </style>
 </head>
 <body>
+    <div id="header">
+        <div id="regresar">
+            <a href="../../index.php">REGRESAR</a>
+        </div>
+    </div>  
 <div class="container">
     <h1>Productos</h1>
     <?php echo "<a href='../viewCart.php' class='cart-link' title='View Cart'><i class='glyphicon glyphicon-shopping-cart'></i></a>";?>

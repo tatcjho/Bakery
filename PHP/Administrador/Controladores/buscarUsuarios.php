@@ -2,10 +2,10 @@
     session_start();
     include '../../Conexion/conexionBD.php';
     $salida="";
-    $query = "SELECT * FROM usuario WHERE usu_rol!='A' ORDER BY usu_nombreApellido ASC";
+    $query = "SELECT * FROM usuario WHERE usu_rol!='A' and usu_eliminado!='S' ORDER BY usu_nombreApellido ASC";
     if (isset($_POST['consulta'])) {
     	$q = $conn->real_escape_string($_POST['consulta']);
-    	$query = "SELECT * FROM usuario WHERE usu_rol!='A' and usu_nombreApellido LIKE '%$q%' ORDER BY usu_nombreApellido ASC";
+    	$query = "SELECT * FROM usuario WHERE usu_rol!='A' and usu_eliminado!='S' and usu_nombreApellido LIKE '%$q%' ORDER BY usu_nombreApellido ASC";
     }
     $resultado = $conn->query($query);
     if ($resultado->num_rows>0) {

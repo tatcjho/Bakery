@@ -38,7 +38,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         date_default_timezone_set("America/Guayaquil");
         $fecha = date('Y/m/d h:i:s', time());   
         $total = ".$cart->total()."*1.12;
-        $insertOrder = $conn->query("INSERT INTO fac_cabe_compras (cabe_codigo, cabe_fecha, cabe_subtotal, cabe_iva, cabe_total, cabe_estado, cabe_eliminado, cabe_modificado, usu_codigo) VALUES (0,'$fecha', '".$cart->total()."',1.12, '".$cart->total()*1.12."','comprado', 'N', 'N', $usu_codigo)");
+        $insertOrder = $conn->query("INSERT INTO fac_cabe_compras (cabe_codigo, cabe_fecha, cabe_subtotal, cabe_iva, cabe_total, cabe_estado, cabe_eliminado, cabe_modificado, usu_codigo) VALUES (0,'$fecha', '".$cart->total()."',12, '".$cart->total()*1.12."',1, 'N', 'N', $usu_codigo)");
         # Esto va en el query'".$_SESSION['sessCustomerID']."'
         if($insertOrder)
         {
@@ -49,7 +49,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             # esto va en el query.$item['id']."";
             foreach($cartItems as $item)
             {
-                $sql.= "INSERT INTO fac_det_compras (det_codigo, det_cantidad, det_precio, cabe_codigo, produ_codigo) VALUES (0, '".$item['qty']."', 0.50,'".$orderID."', '".$item['id']."');";
+                $sql.= "INSERT INTO fac_det_compras (det_codigo, det_cantidad, det_precio, cabe_codigo, produ_codigo) VALUES (0, '".$item['qty']."', '".$item['price']."','".$orderID."', '".$item['id']."');";
                 
             }
             // insert order items into database
@@ -58,6 +58,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             if($insertOrderItems)
             {
                 $cart->destroy();
+                echo "entro";
                 header("Location: orderSuccess.php?id=$orderID");
             }
             else
@@ -68,7 +69,6 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         else
         {
             header("Location: checkout.php?usu_codigo=".$usu_codigo."");
-            
         }
     }
     else

@@ -23,6 +23,7 @@ if(!isset($_REQUEST['id'])){
     <h3>Tu orden se ha realizado con exito. El codigo de su orden es el #<?php echo $_GET['id']; ?></h3>
     <?php 
         header('Refresh: 3; URL=../../index.php'); 
+        
     ?>
 </div>
 </body>

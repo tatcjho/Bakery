@@ -84,7 +84,7 @@ $custRow = $query->fetch_assoc();
     </tfoot>
     </table>
     <div class="shipAddr">
-        <h4>Detalles del Pedido</h4>
+        <h4><b>Detalles del Pedido</b></h4>
         <p><?php echo $custRow['usu_nombreApellido']; ?></p>
         <p><?php echo $custRow['usu_correo']; ?></p>
         <p><?php echo $custRow['usu_telefono']; ?></p>
